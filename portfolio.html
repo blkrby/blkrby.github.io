@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="general.css">
+    
+    <script defer src="general.js"></script>
+    <script defer src="scroll_animations.js"></script>
+
+    <title>Black Ruby - Portfolio - Best web developement</title>
+</head>
+<body>
+    <nav>
+        <div id="nav_header">
+            <p onclick="toggleNav()">&#8801;</p>
+        </div>
+        <div id="nav_links_holder">
+            <div id="nav_links">
+                <a href="home.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="portfolio.html" id="current_page">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <img class="page_banner" src="pictures/banners/portfolio.jpg" alt="">
+
+        <div class="category" id="web_dev">
+            <h1 class="hidden_fade-in">Web development</h1>
+            <h2 class="hidden_fade-in">
+                We design and develop full stack websites.
+            </h2>
+            <a class="hidden_fade-in" id="visit_project" href="services.html #web_dev">Visit service</a>
+
+            <div class="projects">
+                <div class="project hidden_slide_from_left">
+                    <img src="projects/web development/web_development_dummy.jpg" alt="">
+                    <div class="project_infos">
+                        <p class="project_title">Project title</p>
+                        <p class="project_description">
+                            A Very short description of the project represented bla bla bla bla.
+                        </p>
+                        <a href=""><h6>Visit project</h6></a>
+                    </div>
+                </div>
+                <div class="reverse_project hidden_slide_from_right">
+                    <img src="projects/web development/web_development_dummy.jpg" alt="">
+                    <div class="project_infos">
+                        <p class="project_title">Project title</p>
+                        <p class="project_description">
+                            A Very short description of the project represented bla bla bla bla.
+                        </p>
+                        <a href=""><h6>Visit project</h6></a>
+                    </div>
+                </div>
+                <div class="project hidden_slide_from_left">
+                    <img src="projects/web development/web_development_dummy.jpg" alt="">
+                    <div class="project_infos">
+                        <p class="project_title">Project title</p>
+                        <p class="project_description">
+                            A Very short description of the project represented bla bla bla bla.
+                        </p>
+                        <a href=""><h6>Visit project</h6></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="black">
+        <img id="black_logo" class="footer_logo" src="pictures/branding/black_ruby_logo_with_text.png" alt="">
+        <img id="white_logo" class="footer_logo" src="pictures/branding/black_ruby_logo_with_text white.png" alt="">
+        
+        <div class="footer_socials" id="white_footer_socials">
+            <a href="" target="_blank"><img src="pictures/icons/socials/facebook-white.png" alt=""></a>
+            <a href="" target="_blank"><img src="pictures/icons/socials/instagram-white.png" alt=""></a>
+            <a href="" target="_blank"><img src="pictures/icons/socials/twitter-white.png" alt=""></a>
+        </div>
+        <div class="footer_socials" id="black_footer_socials">
+            <a href="" target="_blank"><img src="pictures/icons/socials/facebook_black.png" alt=""></a>
+            <a href="" target="_blank"><img src="pictures/icons/socials/instagram-black.png" alt=""></a>
+            <a href="" target="_blank"><img src="pictures/icons/socials/twitter-black.png" alt=""></a>
+        </div>
+    </footer>
+</body>
+</html>

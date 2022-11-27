@@ -1,0 +1,962 @@
+/*keyframes*/
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*general*/
+.section{
+    min-height: 80vh;
+    padding: 10vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px;
+}
+.section_title img{
+    height: 60px;
+    margin-right: 10px;
+}
+.section h1{
+    font-size: 70px;
+    font-weight: bolder;
+    margin: 0px;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*welcome*/
+#welcome{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(pictures/banners/home.jpg);
+}
+#welcome img{
+    height: 150px;
+    animation: fadeIn 1s;
+}
+#welcome p{
+    font-size: 65px;
+    margin: 0;
+    font-weight: bold;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*who are we*/
+#who_are_we{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#who_are_we img{
+    height: 55vh;
+}
+#who_are_we_content{
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 63%;
+    padding-left: 2%;
+}
+#who_are_we_content h1{
+    width: 100%;
+}
+#who_are_we_content p{
+    width: 100%;
+    text-align: justify;
+    font-size: 40px;
+    margin: 0;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*our services*/
+#our_services{
+    flex-direction: column;
+}
+
+.service{
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0 0 15px;
+    transition: 0.5s;
+}
+.service:hover{
+    background-color: rgba(128, 128, 128, 0.25);
+}
+.reverse_service{
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: 0.5s;
+}
+.reverse_service:hover{
+    background-color: rgba(128, 128, 128, 0.25);
+}
+
+.service_slider{
+    width: 339px;
+    height: 189px;
+    margin: 0 15px 0 0;
+    overflow: hidden;
+}
+.reverse_service .service_slider{
+    width: 339px;
+    height: 189px;
+    margin: 0 0 0 15px;
+    overflow: hidden;
+}
+.service_pictures{
+    width: 300%;
+    height: 100%;
+    display: flex;
+    transition: 1s;
+}
+.service img{
+    background-color: white;
+    width: 339px;
+    height: 189px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+.reverse_service img{
+    background-color: white;
+    width: 339px;
+    height: 189px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+.service .service_infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.reverse_service .service_infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;    
+}
+.service_title{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+.service_description{
+    width: 400px;
+    font-size: 25px;
+    margin: 10px 0;
+    text-align: justify;
+}
+.service_infos a{
+    color: black;
+    text-decoration: none;
+}
+.service_infos a h6{
+    background-color: black;
+    color: white;
+    border: 2px white solid;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    transition: 0.25s;
+}
+.service_infos a h6:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgb(64, 64, 64);
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*selected projects*/
+#selected_projects{
+    flex-direction: column;
+}
+.category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 5px white solid;
+    width: 80%;
+}
+.category h2{
+    font-size: 40px;
+    margin: 10px 0 15px;
+}
+
+.project{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: 0.5s;
+    margin: 0 0 15px;
+}
+.reverse_project{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    transition: 0.5s; 
+    margin: 0 0 15px;
+}
+.project:hover, .reverse_project:hover{
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+}
+.black .project:hover, .black .reverse_project:hover{
+    background-color: rgb(16, 16, 16);
+    border-radius: 10px;
+}
+.project img{
+    background-color: white;
+    width: 368px;
+    height: 207px;
+    margin-right: 15px;
+}
+.reverse_project img{
+    margin-left: 15px;
+    background-color: white;
+    width: 368px;
+    height: 207px;
+}
+.project .project_infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;    
+}
+.reverse_project .project_infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;   
+    
+}
+.project_title{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 0;
+}
+.project_description{
+    width: 400px;
+    font-size: 25px;
+    margin: 10px 0;
+    text-align: justify;
+}
+.project_infos a{
+    color: black;
+    text-decoration: none;
+}
+.black .project_infos a h6{
+    background-color: black;
+    color: white;
+    border: 2px white solid;
+}
+.project_infos a h6{
+    background-color: white;
+    color: black;
+    border: 2px black solid;
+    font-weight: bold;
+    font-size: 20px;
+    height: 40px;
+    width: 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    transition: 0.25s;
+}
+.black .project_infos a h6:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0;
+}
+.project_infos a h6:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgb(64, 64, 64);
+}
+.black .service_more_projects{
+    background-color: white;
+    color: black;
+}
+.service_more_projects{
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 15px;
+    transition: 0.25s;
+}
+.black .service_more_projects:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 0 0 10px rgb(64, 64, 64);
+}
+.service_more_projects:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px black;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*why choose us*/
+#why_choose_us{
+    flex-direction: column;
+}
+#why_choose_us_content{
+    display: flex;
+}
+#our_values, #our_performances{
+    height: 80vh;
+    width: 100%;
+    margin: 10px 0px;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#our_values h2, #our_performances h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 0 15px;
+}
+
+#values{
+    width: 410px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.value{
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.25s;
+    text-shadow: 0 0 5px rgb(64, 64, 64);
+    background-image: url(pictures/random/value_background.jpg);
+    background-size: 225px;
+    background-position: 0;
+}
+.value:hover{
+    background-size: 200px;
+    background-position: auto;
+}
+
+#comments_slider{
+    width: 425px;
+    height: 270px;
+    background-color: black;
+    overflow: hidden;
+}
+#comments{
+    display: flex;
+    width: 500%;
+    height: 100%;
+    transition: 1.5s;
+}
+.comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    height: 100%;
+    width: 20%;
+}
+.comment_content{
+    width: 90%;
+    text-align: justify;
+    font-size: 19px;
+    margin: 0;
+}
+.comment_author{
+    text-align: center;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+/*contact*/
+#contact{
+    flex-direction: column;
+}
+#contact_content{
+    display: flex;
+}
+#mail_form, #socials{
+    height: 70vh;
+    width: 70vh;
+    border-radius: 10px;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+#mail_form h2, #socials h2{
+    color: white;
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+#mail_form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+#mail_form form input, #mail_form form textarea{
+    background-color: white;
+    width: 80%;
+    min-height: 30px;
+    color: black;
+    text-align: center;
+    border: 0;
+    margin: 0 0 5px;
+}
+#mail_form form a{
+    background-color: black;
+    color: white;
+    border: 3px white solid;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 17.5px;
+    padding: 8px 15px;
+    transition: 0.25s;
+}
+#mail_form a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px rgb(16, 16, 16);
+}
+
+.social{
+    background-color: white;
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 10px;
+    text-decoration: none;
+    color: black;
+    transition: 0.25s;
+}
+.social:hover{
+    background-color: black;
+    box-shadow : 0 0 10px rgb(64, 64, 64);
+    color: white;
+}
+.social p{
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.social img{
+    height: 45px;
+    margin-right: 10px;
+    filter: drop-shadow(0 0 2.5px rgb(64, 64, 64));
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
+@media (max-width:1080px){
+    /*who are we*/
+    #who_are_we{
+        flex-direction: column;
+    }
+    #who_are_we img{
+        height: 20vh;
+        margin-bottom: 10px;
+    }
+    #who_are_we_content{
+        height: auto;
+        width: 80%;
+    }
+    #who_are_we_content h1{
+        width: 100%;
+        text-align: center;
+    }
+    #who_are_we_content p{
+        width: 100%;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+    
+    /*selected projects*/
+    #selected_projects{
+        min-height: auto;
+    }
+    .project img{
+        width: 400px;
+        height: 225px;
+    }
+    .reverse_project img{
+        width: 400px;
+        height: 225px;
+    }
+    .project_description{
+        width: 375px;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+
+    /*why choose us*/
+    #our_values, #our_performances{
+        height: 40vh;
+    }
+    #our_values h2, #our_performances h2{
+        font-size: 38px;
+    }
+    #comments_slider{
+        width: 500px;
+        height: 400px;
+    }
+    .comment_content{
+        font-size: 25px;
+    }
+    .comment_author{
+        font-size: 25px;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+
+    /*contact*/
+    #contact_content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #mail_form, #socials{
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+    #mail_form form input, #mail_form form textarea{
+        width: 70%;
+    }
+    #mail_form textarea{
+        height: 300px;
+    }
+    .social{
+        width: 60%;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+
+    /*our services*/
+    #our_services{
+        min-height: auto;
+    }
+    .reverse_service .service_slider{
+        width: 400px;
+        height: 225px;
+    }
+    .service_pictures{
+        width: 400px;
+        height: 225px;
+    }
+    .service img{
+        width: 400px;
+        height: 225px;
+    }
+    .reverse_service img{
+        width: 400px;
+        height: 225px;
+    }
+    .service_description{
+        width: 375px;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+}
+
+@media (max-width:850px){
+    /*who are we*/
+    #who_are_we{
+        flex-direction: column;
+    }
+    #who_are_we img{
+        height: 20vh;
+        margin-bottom: 10px;
+    }
+    #who_are_we_content{
+        height: auto;
+        width: 80%;
+    }
+    #who_are_we_content h1{
+        width: 100%;
+        text-align: center;
+    }
+    #who_are_we_content p{
+        width: 100%;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+        
+    /*selected projects*/
+    .category h2{
+        font-size: 30px;
+        margin: 10px 0 15px;
+    }
+    .project{
+        flex-direction: column;
+        padding: 5px;
+        margin: 0px;
+    }
+    .reverse_project{
+        flex-direction: column;
+        padding: 5px;
+        margin: 0px;
+    }
+    .project:hover, .reverse_project:hover{
+        background-color: rgba(128, 128, 128, 0.25);
+        border-radius: 10px;
+    }
+    .project img{
+        width: 480px;
+        height: 270px;
+        margin: 0;
+    }
+    .reverse_project img{
+        width: 480px;
+        height: 270px;
+        margin: 0;
+    }
+    .project .project_infos{
+        align-items: center;    
+    }
+    .reverse_project .project_infos{
+        align-items: center;            
+    }
+    .project_title{
+        font-size: 35px;
+        margin: 5px 0 0 0;
+    }
+    .project_description{
+        width: 480px;
+        font-size: 25px;
+        margin: 5px 0;
+        text-align: center;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/    
+
+    /*why choose us*/
+    #our_values, #our_performances{
+        height: 45vh;
+    }
+    #our_values h2, #our_performances h2{
+        font-size: 38px;
+    }    
+    .value:hover{
+        background-size: 200px;
+        background-position: auto;
+    }
+
+    #comments_slider{
+        height: 350px;
+    }
+    .comment_content{
+        font-size: 23px;
+    }
+    .comment_author{
+        font-size: 23px;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+        
+    /*contact*/
+    #contact_content{
+        flex-direction: column;
+    }
+    #mail_form, #socials{
+        height: auto;
+        width: 80vw;
+    }
+    #socials{
+        margin-top: 50px;
+    }
+    #mail_form h2, #socials h2{
+        font-size: 40px;
+    }
+    #mail_form form a{
+        font-size: 20px;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+
+    /*our services*/
+    #our_services{
+        flex-direction: column;
+    }
+    .service{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .service:hover{
+        background-color: rgba(128, 128, 128, 0.25);
+    }
+    .reverse_service{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .reverse_service:hover{
+        background-color: rgba(128, 128, 128, 0.25);
+    }
+    .service_slider{
+        width: 480px;
+        height: 270px;
+        margin: 0px;
+    }
+    .reverse_service .service_slider{
+        width: 480px;
+        height: 270px;
+        margin: 0px;
+    }
+    .service img{
+        width: 480px;
+        height: 270px;
+    }
+    .reverse_service img{
+        width: 480px;
+        height: 270px;
+
+    }
+    .service .service_infos{
+        align-items: center;
+    }
+    .reverse_service .service_infos{
+        align-items: center;   
+    }
+    .service_title{
+        font-weight: bold;
+        font-size: 35px;
+        margin: 5px 0 0 0;
+    }
+    .service_description{
+        width: 480px;
+        font-size: 25px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+}
+
+@media (max-width:450px){
+    /*general*/
+    .section_title img{
+        height: 50px;
+    }
+    .section h1{
+        font-size: 40px;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+    /*welcome*/
+    #welcome{
+        min-height: 100vh;
+        background-size: 100vw;
+    }
+    #welcome img{
+        height: 80px;
+    }
+    #welcome p{
+        text-align: center;
+        font-size: 40px;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/    
+        
+    /*who are we*/
+    #who_are_we_content h1{
+        width: 100%;
+        font-size: 50px;
+    }
+    #who_are_we_content p{
+        font-size: 30px;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+
+    /*our services*/
+    #our_services{
+        flex-direction: column;
+    }
+    .service{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .service:hover{
+        background-color: rgba(128, 128, 128, 0.25);
+    }
+    .reverse_service{
+        padding: 10px;
+        flex-direction: column;
+    }
+    .reverse_service:hover{
+        background-color: rgba(128, 128, 128, 0.25);
+    }
+    .service_slider{
+        width: 339px;
+        height: 189px;
+        margin: 0px;
+    }
+    .reverse_service .service_slider{
+        width: 339px;
+        height: 189px;
+        margin: 0px;
+    }
+    .service img{
+        width: 339px;
+        height: 189px;
+    }
+    .reverse_service img{
+        width: 339px;
+        height: 189px;
+
+    }
+    .service .service_infos{
+        align-items: center;
+    }
+    .reverse_service .service_infos{
+        align-items: center;   
+    }
+    .service_title{
+        font-weight: bold;
+        font-size: 27.5px;
+        margin: 5px 0 0 0;
+    }
+    .service_description{
+        width: 330px;
+        font-size: 22.5px;
+        margin: 15px 0;
+        text-align: center;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+        
+    /*selected projects*/
+    .category h2{
+        font-size: 30px;
+        margin: 10px 0 15px;
+    }
+    .project{
+        flex-direction: column;
+        padding: 5px;
+        margin: 0px;
+    }
+    .reverse_project{
+        flex-direction: column;
+        padding: 5px;
+        margin: 0px;
+    }
+    .project:hover, .reverse_project:hover{
+        background-color: rgba(128, 128, 128, 0.25);
+        border-radius: 10px;
+    }
+    .project img{
+        width: 339px;
+        height: 189px;
+        margin: 0;
+    }
+    .reverse_project img{
+        width: 339px;
+        height: 189px;
+        margin: 0;
+    }
+    .project .project_infos{
+        align-items: center;    
+    }
+    .reverse_project .project_infos{
+        align-items: center;            
+    }
+    .project_title{
+        font-size: 27.5px;
+        margin: 5px 0 0 0;
+    }
+    .project_description{
+        width: 339px;
+        font-size: 22.5px;
+        margin: 5px 0;
+        text-align: center;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/    
+        
+    /*why choose us*/
+    #our_values, #our_performances{
+        height: auto;
+        padding: 25px 0;
+    }
+    #our_values h2, #our_performances h2{
+        font-size: 35px;
+    }
+    #values{
+        width: 330px;
+        grid-template-columns: repeat(auto-fill, 160px);
+    }
+    .value{
+        width: 160px;
+        height: 160px;
+    }
+    .value:hover{
+        background-size: 200px;
+        background-position: auto;
+    }
+    #comments_slider{
+        width: 330px;
+        height: 300px;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+        
+    /*contact*/
+    #mail_form, #socials{
+        height: auto;
+        width: 100%;
+    }
+    #mail_form h2, #socials h2{
+        font-size: 35px;
+    }
+    #mail_form form input, #mail_form form textarea{
+        width: 80%;
+    }
+    .social{
+        width: 80%;
+    }
+    /*-----------------------------------------------------------------------------------------------------*/
+}

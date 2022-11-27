@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../web_projects.css">
+    <link rel="stylesheet" href="../../../general.css">
+    <title>Black Ruby - Project Title</title>
+</head>
+<body>
+    <a href="../../../portfolio.html" id="exit"><div></div></a>  
+    
+    <main>
+        <h1>Project title</h1>
+        <h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae est, nihil consequatur, accusantium rem vel aut, odio in debitis cupiditate sit. Quam quasi iure ipsam aliquam iusto dolorem nemo numquam?
+        </h2>
+        <div class="project_infos">
+            <div class="project_info">
+                <h5>Date </h5>
+                <p>:</p>
+                <h6> day/month/year</h6>
+            </div>
+            <div class="project_info">
+                <h5>Type </h5>
+                <p>:</p>
+                <h6> frontend</h6>
+            </div>
+            <div class="project_info">
+                <h5>Owner </h5>
+                <p>:</p>
+                <h6> Company</h6>
+            </div>
+        </div>
+        <a href="" class="visit_website">Visit website</a>
+
+        <div id="web_project_slider">
+            <div id="web_screenchots">
+                <img class="web_project_picture" src="screenshots/screenshot1.png" alt="">
+                <img class="web_project_picture" src="screenshots/screenshot2.png" alt="">
+                <img class="web_project_picture" src="screenshots/screenshot3.png" alt="">
+                <img class="web_project_picture" src="screenshots/screenshot4.png" alt="">
+            </div>
+            <div id="web_buttons">
+                <img id="previous" onclick="previousSlide()" src="../../../pictures/icons/play-pause/previous.png" alt="">
+
+                <div id="pause_play" onclick="pauseUnpause()">
+                    <img id="pause" src="../../../pictures/icons/play-pause/pause.png" alt="">
+                    <img src="../../../pictures/icons/play-pause/play.png" alt="">
+                </div>
+
+                <img id="next" onclick="nextSlide()" src="../../../pictures/icons/play-pause/next.png" alt="">
+            </div>
+        </div>
+    </main>
+
+    <footer class="black">
+        <img id="black_logo" class="footer_logo" src="../../../pictures/branding/black_ruby_logo_with_text.png" alt="">
+        <img id="white_logo" class="footer_logo" src="../../../pictures/branding/black_ruby_logo_with_text white.png" alt="">
+        
+        <div class="footer_socials" id="white_footer_socials">
+            <a href="" target="_blank"><img src="../../../pictures/icons/socials/facebook-white.png" alt=""></a>
+            <a href="" target="_blank"><img src="../../../pictures/icons/socials/instagram-white.png" alt=""></a>
+            <a href="" target="_blank"><img src="../../../pictures/icons/socials/twitter-white.png" alt=""></a>
+        </div>
+        <div class="footer_socials" id="black_footer_socials">
+            <a href="" target="_blank"><img src="../../../pictures/icons/socials/facebook_black.png" alt=""></a>
+            <a href="" target="_blank"><img src="../../../pictures/icons/socials/instagram-black.png" alt=""></a>
+            <a href="" target="_blank"><img src="../../../pictures/icons/socials/twitter-black.png" alt=""></a>
+        </div>
+    </footer>
+
+    <script src="../web_projects.js"></script>
+</body>
+</html>
