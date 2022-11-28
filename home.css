@@ -45,7 +45,7 @@
 }
 #welcome img{
     height: 150px;
-    animation: fadeIn 1s;
+    animation: fadeIn 2s;
 }
 #welcome p{
     font-size: 65px;
@@ -644,7 +644,7 @@
     .project{
         flex-direction: column;
         padding: 5px;
-        margin: 0px;
+        margin: 0 0 15px;
     }
     .reverse_project{
         flex-direction: column;
@@ -879,12 +879,12 @@
     .project{
         flex-direction: column;
         padding: 5px;
-        margin: 0px;
+        margin: 0 0 15px;
     }
     .reverse_project{
         flex-direction: column;
         padding: 5px;
-        margin: 0px;
+        margin: 0 0 15px;
     }
     .project:hover, .reverse_project:hover{
         background-color: rgba(128, 128, 128, 0.25);

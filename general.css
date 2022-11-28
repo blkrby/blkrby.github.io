@@ -63,7 +63,7 @@ nav{
     align-items: center;
     margin-right: 15px;
     height: 0vh;
-    width: 50vh;
+    width: 45vh;
     overflow: hidden;
     box-shadow: 0 0 15px rgb(128, 124, 124);
     transition: 0.75s;
@@ -147,7 +147,7 @@ footer{
     opacity: 0;
     filter: blur(1px);
     transform: translateX(-25%);
-    transition: 1s;
+    transition: 0.5s;
 }
 .show_slide_from_left{
     opacity: 1;
@@ -159,7 +159,7 @@ footer{
     opacity: 0;
     filter: blur(1px);
     transform: translateX(25%);
-    transition: 1s;
+    transition: 0.5s;
 }
 .show_slide_from_right{
     opacity: 1;
@@ -171,7 +171,7 @@ footer{
     opacity: 0;
     filter: blur(1px);
     transform: translateY(25%);
-    transition: 1s;
+    transition: 0.5s;
 }
 .show_slide_from_bottom{
     opacity: 1;
@@ -179,3 +179,9 @@ footer{
     transform: translateY(0%);
 }
 /*-----------------------------------------------------------------------------------------------------*/
+
+@media (max-width:450px){
+    #nav_header p{
+        font-size: 35px;
+    }
+}

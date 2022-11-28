@@ -8,6 +8,6 @@ function toggleNav(){
     }
     else{
         navOn = true;
-        navLinks.style.height = "50vh";
+        navLinks.style.height = "45vh";
     }
 }
