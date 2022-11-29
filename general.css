@@ -100,7 +100,7 @@ footer{
     padding: 50px 0;
 }
 .footer_logo{
-    height: 50px;
+    height: 60px;
 }
 #white_logo{
     display: none;
@@ -130,7 +130,17 @@ footer{
     margin: 0 5px;
 }
 .footer_socials img{
-    height: 45px;
+    height: 40px;
+}
+footer p{
+    text-align: center;
+}
+#copyright_white{
+    color: black;
+}
+.black #copyright_white{
+    text-align: center;
+    display: none;
 }
 /*-----------------------------------------------------------------------------------------------------*/
 
