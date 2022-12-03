@@ -25,6 +25,67 @@ main{
 }
 /*-----------------------------------------------------------------------------------------------------*/
 
+/*waves*/
+.top_wave1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-top: -2px;
+}
+.top_wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 32px;
+}
+.top_wave1 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.top_wave2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    margin-top: -2px;
+}
+.top_wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 47px;
+}
+.top_wave2 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.bottom_wave1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-bottom: -2px;
+}
+.bottom_wave1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 27px;
+}
+.bottom_wave1 .shape-fill {
+    fill: #FFFFFF;
+}
+/*-----------------------------------------------------------------------------------------------------*/
+
 /*nav*/
 nav{
     position: fixed;
@@ -50,10 +111,14 @@ nav{
     width: 35px;
     height: 35px;
     box-shadow: 0 0 5px white;
+    z-index: 100;
 }
 #nav_links_holder{
     display: flex;
     justify-content: flex-end;
+    height: 100vh;
+    width: 100vw;
+    margin: -60px 0 0 0;
 }
 #nav_links{
     background-color: black;
@@ -61,12 +126,14 @@ nav{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 15px;
-    height: 0vh;
-    width: 45vh;
+    height: 100vh;
+    width: 100vw;
     overflow: hidden;
     box-shadow: 0 0 15px rgb(128, 124, 124);
-    transition: 0.75s;
+    transition: 1s;
+    opacity: 0;
+    transform: translateX(100%);
+    z-index: 99;
 }
 #nav_links a{
     text-decoration: none;
@@ -74,7 +141,7 @@ nav{
     font-weight: bold;
     font-size: 25px;
     text-align: center;
-    width: 50%;
+    width: 25%;
     height: 40px;
     transition: 0.25s;
     display: flex;
@@ -98,6 +165,7 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 50px 0;
+    position: relative;
 }
 .footer_logo{
     height: 60px;
@@ -192,6 +260,9 @@ footer p{
 
 @media (max-width:450px){
     #nav_header p{
-        font-size: 35px;
+        font-size: 37.5px;
+    }
+    #nav_links a{
+        width: 50%;
     }
 }
