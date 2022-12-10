@@ -1,0 +1,74 @@
+/*general*/
+body{
+    margin: 0;
+}
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+main{
+    position: relative;
+    z-index: 0;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*nav*/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 5px 0;
+    box-shadow: 0 0 10px black;
+    z-index: 90;
+    background-color: white;
+}
+nav h1{
+    font-family: Agency FB;
+    font-size: 40px;
+    margin: 0 0 0 10px;
+    color: rgb(12, 198, 52);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_page{
+    text-decoration: none;
+    color: rgb(12, 198, 52);
+    font-weight: bold;
+    font-size: 22.5px;
+    margin: 0 15px;
+    transition: 0.25s;
+}
+.nav_page:hover{
+    background-color: rgba(12, 198, 52, 0.5);
+    color: white;
+    padding: 3px 7.5px;
+}
+#current_page{
+    text-decoration: none;
+    background-color: rgb(12, 198, 52);
+    color: white;
+    font-weight: bold;
+    font-size: 22.5px;
+    margin: 0 15px;
+    padding: 3px 7.5px;
+}
+#nav_reservations{
+    text-decoration: none;
+    color: rgb(12, 198, 52);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 7px 12px;
+    margin-right: 10px;
+    border: 3px rgb(12, 198, 52) solid;
+    transition: 0.25s;
+}
+#nav_reservations:hover{
+    background-color: rgb(12, 198, 52);
+    color: white;
+}
+/*-------------------------------------------------------------------------------------------------------*/

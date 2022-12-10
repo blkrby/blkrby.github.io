@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="general.css">
+
+    <script defer src="home.js"></script>
+    <script defer src="general.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <title>Foody - Best natural restaurant</title>
+</head>
+<body>
+    <nav>
+        <h1>Foody</h1>
+
+        <div id="nav_links">
+            <a href="" id="current_page">Home</a>
+            <a href="" class="nav_page">About us</a>
+        </div>
+        
+        <a id="nav_reservations" href="">Reservations</a>
+    </nav>   
+    
+    <main>
+        <div id="home_slider">
+            <div id="home_slider_pages">
+                <div class="home_slider_page" id="slide1">
+                    <div class="home_slider_page_text">
+                        <h1>Healthy Cooking</h1>
+                        <h2><mark style="background-color: rgb(11, 145, 40); color:white;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto blanditiis laboriosam excepturi dolor. Labore itaque,
+                        </h2></mark>
+                    </div>
+                </div>
+                <div class="home_slider_page" id="slide2">
+                    <div class="home_slider_page_text">
+                        <h1>Skilled staff</h1>
+                        <h2><mark style="background-color: rgb(11, 145, 40); color:white;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto blanditiis laboriosam excepturi dolor. Labore itaque,
+                        </h2></mark>
+                    </div>
+                </div>
+                <div class="home_slider_page" id="slide3">
+                    <div class="home_slider_page_text">
+                        <h1>Multiple locations</h1>
+                        <h2><mark style="background-color: rgb(11, 145, 40); color:white;">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto blanditiis laboriosam excepturi dolor. Labore itaque,
+                        </h2></mark>
+                    </div>
+                </div>
+            </div>
+            <div id="home_slider_navigation">
+                <div id="home_nav_slider1" class="selected_home_slider_nav home_slider_nav" onclick="goToFirstPage()"></div>
+                <div id="home_nav_slider2" class="home_slider_nav" onclick="goToSecondPage()"></div>
+                <div id="home_nav_slider3" class="home_slider_nav" onclick="goToThirdPage()"></div>
+            </div>
+        </div>
+
+        <div id="menu">
+            <h1>Our menu</h1>
+
+            <div id="menu_categories">
+                <div class="menu_category selected_menu_category" id="meals_icon" onclick="showMeals()">
+                    <img src="pictures/icons/menu/meals.png" alt="">
+                    <p class="menu_category_title">Meals</p>
+                </div>
+                <div class="menu_category" id="desserts_icon" onclick="showDesserts()">
+                    <img src="pictures/icons/menu/desserts.png" alt="">
+                    <p class="menu_category_title">Desserts</p>
+                </div>
+                <div class="menu_category" id="drinks_icon" onclick="showDrinks()">
+                    <img src="pictures/icons/menu/drinks.png" alt="">
+                    <p class="menu_category_title">Drinks</p>
+                </div>
+            </div>
+
+            <div class="menu_grid" id="meals">
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Meal title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Meal title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Meal title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Meal title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Meal title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Meal title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Meal title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Meal title</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_grid" id="desserts">
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Dessert title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Dessert title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Dessert title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Dessert title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Dessert title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Dessert title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Dessert title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Dessert title</p>
+                    </div>
+                </div>
+            </div>
+            <div class="menu_grid" id="drinks">
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Drink title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Drink title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Drink title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Drink title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Drink title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Drink title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Drink title</p>
+                    </div>
+                </div>
+                <div class="menu_grid_item">
+                    <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
+
+                    <div class="menu_grid_item_infos">
+                        <p>Drink title</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="locations">
+            <h1>Our locations</h1>
+            <h2>We bring healthy food greatness closer to you.</h2>
+
+            <div class="location">
+                <img src="pictures/locations/location 1/location banner 1.jpg" alt="">
+
+                <div class="location_infos">
+                    <p class="location_city">City name</p>
+                    <p class="location_adress">123 fake-street, City name, Country</p>
+                </div>
+            </div>
+            <div class="reverse_location">
+                <img src="pictures/locations/location 2/location banner 2.jpg" alt="">
+
+                <div class="location_infos">
+                    <p class="location_city">City name</p>
+                    <p class="location_adress">123 fake-street, City name, Country</p>
+                </div>
+            </div>
+            <div class="location">
+                <img src="pictures/locations/location 3/location banner 3.jpg" alt="">
+
+                <div class="location_infos">
+                    <p class="location_city">City name</p>
+                    <p class="location_adress">123 fake-street, City name, Country</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="staff">
+            <h1>Meet the staff</h1>
+            <h2>A team of skilled and experience chefs and other personel working to make each meal special.</h2>
+
+            <div id="staff_memebers">
+                <div class="staff_member">
+                    <img src="pictures/chefs/chef 1.jpg" alt="">
+                    <div class="staff_member_infos">
+                        <p class="staff_member_name">Jhon Drill</p>
+                        <p class="staff_member_position">Head Chef</p>
+                        <div class="staff_member_socials">
+                            <a href=""><img src="pictures/icons/socials/instagram-white.png" alt=""></a>
+                            <a href=""><img src="pictures/icons/socials/facebook-white.png" alt=""></a>
+                            <a href=""><img src="pictures/icons/socials/twitter-white.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff_member">
+                    <img src="pictures/chefs/chef 2.jpg" alt="">
+                    <div class="staff_member_infos">
+                        <p class="staff_member_name">Jhon Drill</p>
+                        <p class="staff_member_position">Head Chef</p>
+                        <div class="staff_member_socials">
+                            <a href=""><img src="pictures/icons/socials/instagram-white.png" alt=""></a>
+                            <a href=""><img src="pictures/icons/socials/facebook-white.png" alt=""></a>
+                            <a href=""><img src="pictures/icons/socials/twitter-white.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff_member">
+                    <img src="pictures/chefs/chef 3.jpg" alt="">
+                    <div class="staff_member_infos">
+                        <p class="staff_member_name">Jhon Drill</p>
+                        <p class="staff_member_position">Head Chef</p>
+                        <div class="staff_member_socials">
+                            <a href=""><img src="pictures/icons/socials/instagram-white.png" alt=""></a>
+                            <a href=""><img src="pictures/icons/socials/facebook-white.png" alt=""></a>
+                            <a href=""><img src="pictures/icons/socials/twitter-white.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2>And these are only a few.</h2>
+        </div>
+
+        <div id="footer">
+            <div id="footer_sections">
+                <div id="footer_logo">
+                    <h1>Foody</h1>
+                    <h2>The places for great healthy food.</h2>
+                </div>
+                <div class="footer_section">
+                    <h1>Locations</h1>
+
+                    <a href="" class="footer_location">
+                        <img src="pictures/random/location.jpg" alt="">
+                        <p>123 Fake-street, city, state</p>
+                    </a>
+                    <hr>
+                    <a href="" class="footer_location">
+                        <img src="pictures/random/location.jpg" alt="">
+                        <p>123 Fake-street, city, state</p>
+                    </a>
+                    <hr>
+                    <a href="" class="footer_location">
+                        <img src="pictures/random/location.jpg" alt="">
+                        <p>123 Fake-street, city, state</p>
+                    </a>
+                </div>
+                <div class="footer_section">
+                    <h1>Openning hours</h1>
+                    
+                    <div class="openning_hour">
+                        <h3>Monday</h3>
+                        <h4>08:30 - 16:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Tuesday</h3>
+                        <h4>08:30 - 16:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Wednesday</h3>
+                        <h4>08:30 - 16:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Thursday</h3>
+                        <h4>08:30 - 16:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Friday</h3>
+                        <h4>08:30 - 17:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Saturday</h3>
+                        <h4>08:30 - 17:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Monday</h3>
+                        <h4>11:30 - 17:00</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_socials">
+                <p>Copyright &copy; Black Ruby. All rights reserved.</p>
+
+                <div class="footer_socials">
+                    <a href=""><img src="pictures/icons/socials/instagram-white.png" alt=""></a>
+                    <a href=""><img src="pictures/icons/socials/twitter-white.png" alt=""></a>
+                    <a href=""><img src="pictures/icons/socials/facebook-white.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,472 @@
+/*slider*/
+#home_slider{
+    aspect-ratio: 19/9;
+    height: 100%;
+    overflow: hidden;
+}
+#home_slider_pages{
+    width: 300%;
+    height: 100%;
+    background-color: blue;
+    display: flex;
+    transition: 1s;
+}
+.home_slider_page{
+    width: 33.3333333333%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.home_slider_page_text{
+    margin: 150px 0 0 30px;
+    width: 27.5%;
+}
+.home_slider_page_text h1{
+    color: rgb(11, 145, 40);
+    text-shadow: 0 0 10px black;
+    font-size: 60px;
+    font-family: Agency FB;
+    margin: 0 0 15px;
+    width: 100%;
+}
+.home_slider_page_text h2{
+    color: white;
+    font-size: 30px;
+    font-weight: normal;
+    margin: 0;
+}
+#home_slider_navigation{
+    width: 100%;
+    height: 10%;
+    margin-top: -5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home_slider_nav{
+    height: 14px;
+    width: 14px;
+    border-radius: 1000px;
+    margin: 0 2.5px;
+    border: solid 2px white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: 0.25s;
+}
+.home_slider_nav:hover{
+    background-color: rgba(0, 29, 92, 0.5);
+}
+.selected_home_slider_nav{
+    height: 14px;
+    width: 14px;
+    border-radius: 1000px;
+    margin: 0 2.5px;
+    border: solid 2px white;
+    background-color: rgb(0, 29, 92);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);    
+}
+
+#slide1{
+    background-image: url(pictures/slides/slide\ 1.jpg);
+    background-size: cover;
+}
+#slide2{
+    background-image: url(pictures/slides/slide\ 2.jpg);
+    background-size: cover;
+}
+#slide3{
+    background-image: url(pictures/slides/slide\ 3.jpg);
+    background-size: cover;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*menu*/
+#menu{
+    min-height: 80vh;
+    padding: 10vh 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#menu h1{
+    font-family: Agency FB;
+    font-size: 60px;
+    color: rgb(12, 198, 52);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    margin: 0 0 15px;
+}
+
+#menu_categories{
+    display: flex;
+}
+.menu_category{
+    aspect-ratio: 1/1.5;
+    width: 200px;
+    margin: 0 1px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15, 224, 61);
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+}
+.menu_category img{
+    height: 150px;
+    width: 150px;
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+}
+.menu_category_title{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+}
+.selected_menu_category{
+    background-color: rgb(11, 145, 40);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.menu_grid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 275px);
+    grid-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+.menu_grid_item{
+    height: 275px;
+    width: 275px;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 0 0 0px black;
+}
+.menu_grid_item:hover{
+    box-shadow: 0 0 10px black;
+}
+.menu_grid_item img{
+    height: inherit;
+    width: inherit;
+}
+.menu_grid_item_infos{
+    width: inherit;
+    height: inherit;
+    margin-top: -280px;
+    position: relative;
+    padding-top: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+.menu_grid_item_infos:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-top: 0%;
+
+}
+.menu_grid_item_infos p{
+    font-weight: bold;
+    color: white;
+    font-family: Agency FB;
+    font-size: 35px;
+    text-shadow: 0 0 10px gray;
+}
+
+#desserts{
+    display: none;
+}
+#drinks{
+    display: none;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*locations*/
+#locations{
+    min-height: 80vh;
+    padding: 10vh 0;
+    background-color: rgb(191, 255, 205);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#locations h1{
+    font-family: Agency FB;
+    font-size: 60px;
+    color: rgb(12, 198, 52);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    margin: 0 0 15px;
+}
+#locations h2{
+    font-size: 35px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    width: 60%;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+    margin: 5px 0;
+}
+.reverse_location{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s;
+    margin: 5px 0;
+}
+.location:hover, .reverse_location:hover{
+    background-color: rgba(0, 0, 0, 0.125);
+}
+.location img, .reverse_location img{
+    aspect-ratio: 1/1;
+    height: 250px;
+}
+.location_infos{
+    width: 500px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.location_city{
+    font-family: Agency FB;
+    font-size: 60px;
+    font-weight: bold;
+    width: 90%;
+    color: rgb(11, 145, 40);
+    margin: 0;
+}
+.reverse_location .location_city{
+    text-align: right;
+}
+.location_adress{
+    font-family: Agency FB;
+    font-size: 50px;
+    font-weight: normal;
+    width: 90%;
+    color: white;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.reverse_location .location_adress{
+    text-align: right;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*staff*/
+#staff{
+    min-height: 80vh;
+    padding: 10vh 0;
+    background-color: rgb(191, 255, 205);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#staff h1{
+    font-family: Agency FB;
+    font-size: 60px;
+    color: rgb(12, 198, 52);
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    margin: 0 0 15px;
+}
+#staff h2{
+    font-size: 35px;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+    width: 60%;
+    text-align: center;
+    margin: 0 0 30px;
+}
+
+#staff_memebers{
+    display: grid;
+    width: 80%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, 290px);
+    justify-content: center;
+    align-items: center;
+}
+.staff_member{ 
+    border: 6px rgb(11, 145, 40) solid;  
+    height: 290px;
+    width: 290px;
+    border-radius: 10000px;
+    transition: 0.25s;
+}
+.staff_member:hover{
+    border: 6px rgb(12, 198, 52) solid;
+}
+.staff_member img{
+    height: inherit;
+    width: inherit;
+    background-color: red;  
+    border-radius: inherit;
+}
+.staff_member_infos{
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: inherit;
+    margin-top: -294px;
+    opacity: 0;
+    transition: 0.25s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.staff_member_infos:hover{
+    opacity: 1;
+}
+.staff_member_name{
+    color: white;
+    text-shadow: 0 0 10px black;
+    font-family: Agency FB;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    width: 70%;
+    margin: 0;
+}
+.staff_member_position{
+    color: white;
+    font-family: Agency FB;
+    width: 70%;
+    border-bottom: 3px solid white;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 25px;
+}
+.staff_member_socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.staff_member_socials a{
+    margin: 0 5px;
+}
+.staff_member_socials img{
+    height: 40px;
+    background: none;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*footer*/
+#footer{
+    min-height: 80vh;
+    padding: 15vh 0 5vh;
+    background-color: rgb(11, 145, 40);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer_sections{
+    display: flex;
+    justify-content: center;
+    border-bottom: 3px white solid;
+    width: 95%;
+    padding-bottom: 25px;
+}
+
+#footer_logo{
+    width: 25%;
+    height: 70%;
+}
+#footer_logo h1{
+    font-family: Agency FB;
+    color: white;
+    font-size: 70px;
+    margin: 0 0 15px;
+}
+#footer_logo h2{
+    font-family: Agency FB;
+    color: white;
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer_section{
+    height: 70%;
+    margin: 0 15px;
+}
+.footer_section hr{
+    color: white;
+}
+
+.footer_section h1{
+    font-size: 50px;
+    color: white;
+    font-family: Agency FB;
+    margin: 0 0 10px;
+}
+.openning_hour{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+.openning_hour h3{
+    color : white;
+    font-size: 20px;
+}
+.openning_hour h4{
+    color: white;
+    font-size: 20px;
+}
+
+.footer_location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    margin: 5px 0;
+}
+.footer_location img{
+    height: 80px;
+}
+.footer_location p{
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: Agency FB;
+    font-size: 23px;
+    margin: 0;
+}
+
+#footer_socials{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+.footer_socials{
+    display: flex;
+}
+.footer_socials a{
+    margin: 0 5px;
+}
+.footer_socials img{
+    height: 35px;
+}
+/*-------------------------------------------------------------------------------------------------------*/
