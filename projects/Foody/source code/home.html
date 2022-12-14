@@ -10,19 +10,93 @@
     <script defer src="home.js"></script>
     <script defer src="general.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
-    <title>Foody - Best natural restaurant</title>
+    <script defer src="scroll_animations.js"></script>
+    
+    <title>Foody - Best natural & healthy restaurant</title>
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <h1>Foody</h1>
 
         <div id="nav_links">
-            <a href="" id="current_page">Home</a>
-            <a href="" class="nav_page">About us</a>
+            <a href="#home_slider" class="nav_page">Home</a>
+            <a href="#about" class="nav_page">About</a>
+            <a href="#menu" class="nav_page">Menu</a>
+            <a href="#locations" class="nav_page">Locations</a>
+            <a href="#staff" class="nav_page">Staff</a>
         </div>
         
-        <a id="nav_reservations" href="">Reservations</a>
-    </nav>   
+        <div id="nav_reservations" href="" onclick="turnReservationFormOn()">Reservations</div>
+    </nav>  
+    <div id="mobile_nav_links">
+        <a href="#home_slider" class="mobie_nav_page">Home</a>
+        <a href="#about" class="mobie_nav_page">About</a>
+        <a href="#menu" class="mobie_nav_page">Menu</a>
+        <a href="#locations" class="mobie_nav_page">Locations</a>
+        <a href="#staff" class="mobie_nav_page">Staff</a>
+    </div> 
+
+    <div id="reservation_modal">
+        <div id="reservation_modal_content">
+            <div id="reservation_modal_exit" onclick="turnReservationFormOff()"></div>
+            <form action="">
+                <h1>Reservation form</h1>
+
+                <fieldset id="form_email">
+                    <legend>Email</legend>
+                    
+                    <input type="email" name="" id="" placeholder="emailadress@service.com">
+                </fieldset>
+                
+                <fieldset id="location">
+                    <legend>Location</legend>
+                    
+                    <select name="" id="">
+                        <option value="">Select location</option>
+                        <option value="">Location 1</option>
+                        <option value="">Location 2</option>
+                        <option value="">Location 3</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Guests</legend>
+
+                    <select name="" id="">
+                        <option value="">Select amount of guests</option>
+                        <option value="">1 guest</option>
+                        <option value="">2 guests</option>
+                        <option value="">4 guests</option>
+                    </select>
+                </fieldset>
+
+                <fieldset id="form_date">
+                    <legend>Date</legend>
+                    <input type="date" name="" id="">
+                </fieldset>
+
+                <fieldset id="form_arrival_times">
+                    <legend>Time</legend>
+
+                    <div class="form_arrival_time">
+                        <p>Morning</p>
+                        <input type="checkbox" name="arrival_time" id="">
+                    </div>
+                    <hr>
+                    <div class="form_arrival_time">
+                        <p>Afternoon</p>
+                        <input type="checkbox" name="arrival_time" id="">
+                    </div>
+                    <hr>
+                    <div class="form_arrival_time">
+                        <p>Night</p>
+                        <input type="checkbox" name="arrival_time" id="">
+                    </div>
+                </fieldset>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
     
     <main>
         <div id="home_slider">
@@ -60,9 +134,9 @@
         </div>
 
         <div id="menu">
-            <h1>Our menu</h1>
+            <h1 class="fade_in_passive">Our menu</h1>
 
-            <div id="menu_categories">
+            <div id="menu_categories" class="slide_up_passive">
                 <div class="menu_category selected_menu_category" id="meals_icon" onclick="showMeals()">
                     <img src="pictures/icons/menu/meals.png" alt="">
                     <p class="menu_category_title">Meals</p>
@@ -78,56 +152,56 @@
             </div>
 
             <div class="menu_grid" id="meals">
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Meal title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Meal title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Meal title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Meal title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Meal title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Meal title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Meal title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/meals/meal_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
@@ -136,56 +210,56 @@
                 </div>
             </div>
             <div class="menu_grid" id="desserts">
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Dessert title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Dessert title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Dessert title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Dessert title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Dessert title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Dessert title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Dessert title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/desserts/dessert_dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
@@ -194,56 +268,56 @@
                 </div>
             </div>
             <div class="menu_grid" id="drinks">
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Drink title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Drink title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Drink title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Drink title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Drink title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Drink title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
                         <p>Drink title</p>
                     </div>
                 </div>
-                <div class="menu_grid_item">
+                <div class="menu_grid_item slide_up_passive">
                     <img src="pictures/menu/drinks/drinks dummy.jpg" alt="">
 
                     <div class="menu_grid_item_infos">
@@ -254,10 +328,10 @@
         </div>
 
         <div id="locations">
-            <h1>Our locations</h1>
-            <h2>We bring healthy food greatness closer to you.</h2>
+            <h1 class="fade_in_passive">Our locations</h1>
+            <h2 class="fade_in_passive">We bring healthy food greatness closer to you.</h2>
 
-            <div class="location">
+            <div class="location slide_right_passive">
                 <img src="pictures/locations/location 1/location banner 1.jpg" alt="">
 
                 <div class="location_infos">
@@ -265,7 +339,7 @@
                     <p class="location_adress">123 fake-street, City name, Country</p>
                 </div>
             </div>
-            <div class="reverse_location">
+            <div class="reverse_location slide_left_passive">
                 <img src="pictures/locations/location 2/location banner 2.jpg" alt="">
 
                 <div class="location_infos">
@@ -273,7 +347,7 @@
                     <p class="location_adress">123 fake-street, City name, Country</p>
                 </div>
             </div>
-            <div class="location">
+            <div class="location slide_right_passive">
                 <img src="pictures/locations/location 3/location banner 3.jpg" alt="">
 
                 <div class="location_infos">
@@ -284,11 +358,11 @@
         </div>
 
         <div id="staff">
-            <h1>Meet the staff</h1>
-            <h2>A team of skilled and experience chefs and other personel working to make each meal special.</h2>
+            <h1 class="fade_in_passive">Meet the staff</h1>
+            <h2 class="fade_in_passive">A team of skilled and experience chefs and other personel working to make each meal special.</h2>
 
             <div id="staff_memebers">
-                <div class="staff_member">
+                <div class="staff_member slide_right_passive">
                     <img src="pictures/chefs/chef 1.jpg" alt="">
                     <div class="staff_member_infos">
                         <p class="staff_member_name">Jhon Drill</p>
@@ -300,7 +374,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="staff_member">
+                <div class="staff_member slide_right_passive">
                     <img src="pictures/chefs/chef 2.jpg" alt="">
                     <div class="staff_member_infos">
                         <p class="staff_member_name">Jhon Drill</p>
@@ -312,7 +386,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="staff_member">
+                <div class="staff_member slide_right_passive">
+                    <img src="pictures/chefs/chef 3.jpg" alt="">
+                    <div class="staff_member_infos">
+                        <p class="staff_member_name">Jhon Drill</p>
+                        <p class="staff_member_position">Head Chef</p>
+                        <div class="staff_member_socials">
+                            <a href=""><img src="pictures/icons/socials/instagram-white.png" alt=""></a>
+                            <a href=""><img src="pictures/icons/socials/facebook-white.png" alt=""></a>
+                            <a href=""><img src="pictures/icons/socials/twitter-white.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="staff_member slide_right_passive">
                     <img src="pictures/chefs/chef 3.jpg" alt="">
                     <div class="staff_member_infos">
                         <p class="staff_member_name">Jhon Drill</p>
@@ -328,15 +414,100 @@
             <h2>And these are only a few.</h2>
         </div>
 
-        <div id="footer">
+        <div id="costumer_comments">
+            <h1 class="fade_in_passive">Costomer appreciation</h1>
+            <h2 class="fade_in_passive">Our costumer's appreciation of our service</h2>
+
+            <div id="comments_slider_holder" class="fade_in_passive">
+                <img class="comments_slider_nav" src="pictures/icons/nav/slider nav/slider_nav_previous.png" alt="" onclick="previousComment()">
+                <div id="comments_slider">
+                    <div id="comments">
+                        <div class="comment_card">
+                            <div class="comment_card_header">
+                                <img src="pictures/chefs/chef 1.jpg" alt="">
+                                <div class="comment_card_header_text">
+                                    <p class="commenter_name">Bill Clock</p>
+                                    <p class="comment_location">123 Face-street, city name</p>
+                                </div>
+                            </div>
+                            <p class="comment_card_content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam error nobis placeat iusto quod quidem, alias obcaecati. Et, aliquam quae!
+                            </p>
+                        </div>
+                        <div class="comment_card">
+                            <div class="comment_card_header">
+                                <img src="pictures/chefs/chef 1.jpg" alt="">
+                                <div class="comment_card_header_text">
+                                    <p class="commenter_name">Bill Clock</p>
+                                    <p class="comment_location">123 Face-street, city name</p>
+                                </div>
+                            </div>
+                            <p class="comment_card_content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam error nobis placeat iusto quod quidem, alias obcaecati. Et, aliquam quae!
+                            </p>
+                        </div>
+                        <div class="comment_card">
+                            <div class="comment_card_header">
+                                <img src="pictures/chefs/chef 1.jpg" alt="">
+                                <div class="comment_card_header_text">
+                                    <p class="commenter_name">Bill Clock</p>
+                                    <p class="comment_location">123 Face-street, city name</p>
+                                </div>
+                            </div>
+                            <p class="comment_card_content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam error nobis placeat iusto quod quidem, alias obcaecati. Et, aliquam quae!
+                            </p>
+                        </div>
+                        <div class="comment_card">
+                            <div class="comment_card_header">
+                                <img src="pictures/chefs/chef 1.jpg" alt="">
+                                <div class="comment_card_header_text">
+                                    <p class="commenter_name">Bill Clock</p>
+                                    <p class="comment_location">123 Face-street, city name</p>
+                                </div>
+                            </div>
+                            <p class="comment_card_content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam error nobis placeat iusto quod quidem, alias obcaecati. Et, aliquam quae!
+                            </p>
+                        </div>
+                        <div class="comment_card">
+                            <div class="comment_card_header">
+                                <img src="pictures/chefs/chef 1.jpg" alt="">
+                                <div class="comment_card_header_text">
+                                    <p class="commenter_name">Bill Clock</p>
+                                    <p class="comment_location">123 Face-street, city name</p>
+                                </div>
+                            </div>
+                            <p class="comment_card_content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam error nobis placeat iusto quod quidem, alias obcaecati. Et, aliquam quae!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <img class="comments_slider_nav" src="pictures/icons/nav/slider nav/slider_nav_next.png" alt="" onclick="nextComment()">
+                
+                <div id="mobile_slider_nav">
+                    <img class="comments_slider_nav" src="pictures/icons/nav/slider nav/slider_nav_previous.png" alt="" onclick="previousComment()">
+                    <img class="comments_slider_nav" src="pictures/icons/nav/slider nav/slider_nav_next.png" alt="" onclick="nextComment()">
+                </div>
+            </div>
+        </div>
+
+        <div id="enjoy">
+            <h1 class="fade_in_passive">Come have a great time eating great food at Foody.</h1>            
+
+            <div class="fade_in_passive">Book a table</div>
+        </div>
+
+        <footer>
             <div id="footer_sections">
-                <div id="footer_logo">
+                <div id="footer_logo" class="slide_up_passive">
                     <h1>Foody</h1>
                     <h2>The places for great healthy food.</h2>
                 </div>
-                <div class="footer_section">
+                <div class="footer_section slide_up_passive">
                     <h1>Locations</h1>
-
+    
                     <a href="" class="footer_location">
                         <img src="pictures/random/location.jpg" alt="">
                         <p>123 Fake-street, city, state</p>
@@ -352,7 +523,7 @@
                         <p>123 Fake-street, city, state</p>
                     </a>
                 </div>
-                <div class="footer_section">
+                <div class="footer_section slide_up_passive">
                     <h1>Openning hours</h1>
                     
                     <div class="openning_hour">
@@ -391,16 +562,17 @@
                     </div>
                 </div>
             </div>
-            <div id="footer_socials">
+            <div id="footer_socials" class="fade_in_passive">
                 <p>Copyright &copy; Black Ruby. All rights reserved.</p>
-
+    
                 <div class="footer_socials">
                     <a href=""><img src="pictures/icons/socials/instagram-white.png" alt=""></a>
                     <a href=""><img src="pictures/icons/socials/twitter-white.png" alt=""></a>
                     <a href=""><img src="pictures/icons/socials/facebook-white.png" alt=""></a>
+                    <a href=""><img src="pictures/icons/socials/mail-white.png" alt=""></a>
                 </div>
             </div>
-        </div>
+        </footer>
     </main>
 </body>
 </html>

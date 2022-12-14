@@ -786,7 +786,7 @@ section h1{
 
 @media (max-width:450px){
     /*general*/
-    section_title img{
+    .section_title img{
         height: 50px;
     }
     section h1{

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="about_us.css">
+    <link rel="stylesheet" href="general.css">
+
+    <script defer src="general.js"></script>
+
+    <title>Foody - Best natural & healthy restaurant</title>
+</head>
+<body>
+    <nav id="nav">
+        <h1>Foody</h1>
+
+        <div id="nav_links">
+            <a href="home.html" class="nav_page">Home</a>
+            <a href="about_us.html"  id="current_page">About us</a>
+        </div>
+        
+        <div id="nav_reservations" href="" onclick="turnReservationFormOn()">Reservations</div>
+    </nav>  
+
+    <div id="reservation_modal">
+        <div id="reservation_modal_content">
+            <div id="reservation_modal_exit" onclick="turnReservationFormOff()"></div>
+            <form action="">
+                <h1>Reservation form</h1>
+                <h2>
+                    Random text to be completed later. Something compelling.
+                </h2>
+                
+                <fieldset id="location">
+                    <legend>Location</legend>
+                    <select name="" id="">
+                        <option value="">Location 1</option>
+                        <option value="">Location 2</option>
+                        <option value="">Location 3</option>
+                    </select>
+                </fieldset>
+
+                <fieldset id="form_date">
+                    <legend>Date</legend>
+                    <input type="date" name="" id="">
+                </fieldset>
+
+                <fieldset id="form_arrival_times">
+                    <legend>Time</legend>
+
+                    <div class="form_arrival_time">
+                        <p>Morning</p>
+                        <input type="checkbox" name="arrival_time" id="">
+                    </div>
+                    <hr>
+                    <div class="form_arrival_time">
+                        <p>Afternoon</p>
+                        <input type="checkbox" name="arrival_time" id="">
+                    </div>
+                    <hr>
+                    <div class="form_arrival_time">
+                        <p>Night</p>
+                        <input type="checkbox" name="arrival_time" id="">
+                    </div>
+                </fieldset>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <main>
+        <div id="who_are_we">
+            <h1>Who are we ?</h1>
+            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, tempora ea. Illum quis est atque tempore at, quo, esse deserunt mollitia debitis, illo officiis! Blanditiis ducimus alias totam cupiditate beatae?</h2>
+        </div>
+
+        <div id="why_choose_us">
+            <h1>Why Choose us ?</h1>
+            <div id="why_choose_us_content">
+                <div id="why_choose_us_grid">
+                    <div class="reason">
+                        <p>Healthy food</p>
+                    </div>
+                    <div class="reason">
+                        <p>Healthy environment</p>
+                    </div>
+                    <div class="reason">
+                        <p>Good service</p>
+                    </div>
+                    <div class="reason">
+                        <p>Good service</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <div id="footer_sections">
+                <div id="footer_logo">
+                    <h1>Foody</h1>
+                    <h2>The places for great healthy food.</h2>
+                </div>
+                <div class="footer_section">
+                    <h1>Locations</h1>
+
+                    <a href="" class="footer_location">
+                        <img src="pictures/random/location.jpg" alt="">
+                        <p>123 Fake-street, city, state</p>
+                    </a>
+                    <hr>
+                    <a href="" class="footer_location">
+                        <img src="pictures/random/location.jpg" alt="">
+                        <p>123 Fake-street, city, state</p>
+                    </a>
+                    <hr>
+                    <a href="" class="footer_location">
+                        <img src="pictures/random/location.jpg" alt="">
+                        <p>123 Fake-street, city, state</p>
+                    </a>
+                </div>
+                <div class="footer_section">
+                    <h1>Openning hours</h1>
+                    
+                    <div class="openning_hour">
+                        <h3>Monday</h3>
+                        <h4>08:30 - 16:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Tuesday</h3>
+                        <h4>08:30 - 16:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Wednesday</h3>
+                        <h4>08:30 - 16:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Thursday</h3>
+                        <h4>08:30 - 16:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Friday</h3>
+                        <h4>08:30 - 17:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Saturday</h3>
+                        <h4>08:30 - 17:00</h4>
+                    </div>
+                    <hr>
+                    <div class="openning_hour">
+                        <h3>Monday</h3>
+                        <h4>11:30 - 17:00</h4>
+                    </div>
+                </div>
+            </div>
+            <div id="footer_socials">
+                <p>Copyright &copy; Black Ruby. All rights reserved.</p>
+
+                <div class="footer_socials">
+                    <a href=""><img src="pictures/icons/socials/instagram-white.png" alt=""></a>
+                    <a href=""><img src="pictures/icons/socials/twitter-white.png" alt=""></a>
+                    <a href=""><img src="pictures/icons/socials/facebook-white.png" alt=""></a>
+                    <a href=""><img src="pictures/icons/socials/mail-white.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

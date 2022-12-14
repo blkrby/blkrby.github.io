@@ -1,0 +1,45 @@
+/*fade in*/
+.fade_in_passive{
+    opacity: 0;
+    transition: 0.5s;
+}
+.fade_in_active{
+    opacity: 1;
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*Slide up*/
+.slide_up_passive{
+    transform: translateY(10%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.slide_up_active{
+    opacity: 1;
+    transform: translateY(0%);
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*Slide right*/
+.slide_right_passive{
+    transform: translateX(-10%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.slide_right_active{
+    opacity: 1;
+    transform: translateX(0%);
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*Slide left*/
+.slide_left_passive{
+    transform: translateX(10%);
+    opacity: 0;
+    transition: 0.5s;
+}
+.slide_left_active{
+    opacity: 1;
+    transform: translateX(0%);
+}
+/*-------------------------------------------------------------------------------------------------------*/

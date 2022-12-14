@@ -1,0 +1,91 @@
+/*who_are_we*/
+#who_are_we{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#who_are_we h1{
+    width: 22.5%;
+    padding: 0 0 0 2.5%;
+    font-size: 100px;
+    font-family: Agency FB;
+    background-color: rgb(12, 198, 52);
+    color: white;
+    text-shadow: 0 0 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#who_are_we h2{
+    width: 70%;
+    padding: 0 2.5%;
+    text-align: justify;
+    display: flex;
+    font-size: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100%;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(15, 224, 61);
+}
+/*-------------------------------------------------------------------------------------------------------*/
+
+/*why choose us*/
+#why_choose_us{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#why_choose_us h1{
+    width: 22.5%;
+    padding: 0 0 0 2.5%;
+    font-size: 100px;
+    font-family: Agency FB;
+    background-color: rgb(15, 224, 61);
+    color: white;
+    text-shadow: 0 0 10px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+#why_choose_us_content{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(12, 198, 52);
+}
+#why_choose_us_grid{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    grid-gap: 10px;
+}
+.reason{
+    background-color: rgb(15, 224, 61);
+    height: 225px;
+    width: 225px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reason p{
+    width: 80%;
+    font-family: Agency FB;
+    font-weight: bold;
+    font-size: 35px;
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------------------------------------------------------------------------------------*/

@@ -15,15 +15,10 @@ const desserts = document.getElementById("desserts");
 const drinks = document.getElementById("drinks");
 /*---------- Menu categories variables end ----------*/
 
-/*Location modals variables start*/
-var locationModalsMargin = 0;
-const locationModals = document.getElementById("location_modals");
-const locationPictures1 = document.getElementById("location_pictures1");
-/*---------- Location modals variables end ----------*/
-
-/*Closind & openning location modals variables start*/
-var locationModalsClosed = true;
-/*---------- Closind & openning location modals variables end ----------*/
+/*Comments slider variables start*/
+var commentsSliderMargin = 0;
+const comments = document.getElementById("comments");
+/*---------- Comments slider variables end ----------*/
 
 /*Home slider code start*/
 function goToFirstPage(){
@@ -82,25 +77,15 @@ function showDrinks(){
 }
 /*---------- Menu categories code start ----------*/
 
-/*Location modals code start*/
-function nextModalSlide(){
-    homeSliderMargin += 100;
-    if(homeSliderMargin > 400)
-        homeSliderMargin = 0;
-    
-        locationPictures1.style.marginLeft = -homeSliderMargin + "%";
+/*Comments slider code start*/
+function nextComment(){
+    if(commentsSliderMargin < 1230)
+        commentsSliderMargin += 410;
+    comments.style.marginLeft = -commentsSliderMargin +"px";
 }
-function previousModalSlide(){
-    homeSliderMargin -= 100;
-    if(homeSliderMargin < 0)
-        homeSliderMargin = 400;
-    
-        locationPictures1.style.marginLeft = -homeSliderMargin + "%";
+function previousComment(){
+    if(commentsSliderMargin > 0)
+        commentsSliderMargin -= 410;
+    comments.style.marginLeft = -commentsSliderMargin +"px";
 }
-/*---------- Location modals code start ----------*/
-
-/*Closind & openning location modals code start*/
-function closeAllLocationModals(){
-    locationModals.style.opacity = "0.0";
-}
-/*---------- Closind & openning location modals code start ----------*/
+/*---------- Comments slider code start ----------*/
