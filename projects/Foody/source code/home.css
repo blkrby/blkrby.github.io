@@ -109,7 +109,6 @@ footer{
     width: 95%;
     padding-bottom: 25px;
 }
-
 #footer_logo{
     width: 25%;
     height: 70%;
@@ -127,7 +126,6 @@ footer{
     font-weight: normal;
     margin: 0;
 }
-
 .footer_section{
     height: 70%;
     margin: 0 15px;
@@ -135,7 +133,6 @@ footer{
 .footer_section hr{
     color: white;
 }
-
 .footer_section h1{
     font-size: 50px;
     color: white;
@@ -179,7 +176,6 @@ footer{
     font-size: 23px;
     margin: 0;
 }
-
 #footer_socials{
     width: 95%;
     display: flex;
@@ -1090,7 +1086,7 @@ footer{
     }
     .menu_category{
         aspect-ratio: 1/1.5;
-        width: 100px;
+        width: 125px;
         margin: 0 0.5px;
     }
     .menu_category img{
@@ -1185,9 +1181,6 @@ footer{
     .comments_slider_nav{
         display: none;
     }
-
-    
-
     .comment_card{
         height: 275px;
         width: 410px;
@@ -1226,6 +1219,131 @@ footer{
         margin: 0 auto;
         font-size: 23px;
         text-align: justify;
+    }
+    /*-------------------------------------------------------------------------------------------------------*/
+
+    /*footer*/
+    #footer_sections{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+    }
+    #footer_sections hr{
+        display: none;
+    }
+    #footer_logo{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 3px white solid;
+    }
+    #footer_logo h1{
+        text-align: center;
+    }
+    #footer_logo h2{
+        text-align: center;
+    }
+    .footer_section{
+        width: 90%;
+        border-bottom: 3px white solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .openning_hour{
+        width: 90%;
+        border-bottom: 2px white solid;
+    }
+    .openning_hour h3{
+        color : white;
+        font-size: 20px;
+    }
+    .openning_hour h4{
+        color: white;
+        font-size: 20px;
+    }
+    .footer_location{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        margin: 5px 0;
+    }
+    .footer_location img{
+        height: 80px;
+    }
+    .footer_location p{
+        width: 130px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        color: white;
+        font-weight: bold;
+        font-family: Agency FB;
+        font-size: 23px;
+        margin: 0;
+    }
+    #footer_socials{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        font-weight: bold;
+    }
+    .footer_socials{
+        display: flex;
+    }
+    .footer_socials a{
+        margin: 0 5px;
+    }
+    .footer_socials img{
+        height: 35px;
+    }
+    /*-------------------------------------------------------------------------------------------------------*/
+
+    /*reservation modal*/
+    #reservation_modal_content{
+        height: 65%;
+        width: 90%;
+    }
+    #reservation_modal_exit{
+        width: 20px;
+        height: 20px;
+        margin: -130% 0 0 -80%;
+    }
+    #reservation_modal_content h1{
+        font-size: 40px;
+    }
+    #reservation_modal_content fieldset{
+        width: 85%;
+        height: 25px;
+    }
+    #reservation_modal_content select{
+        width: 80%;
+        height: 27.5px;
+    }
+    #form_email input{
+        height: 27.5px;
+        width: 80%;
+    }
+    #form_date input{
+        height: 27.5px;
+        width: 80%;
+    }
+    .form_arrival_time p{
+        margin: 0 10px;
+        font-size: 20px;
+    }
+    #form_arrival_times hr{
+        height: 20px;;
     }
     /*-------------------------------------------------------------------------------------------------------*/
 }
