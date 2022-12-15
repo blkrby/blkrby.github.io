@@ -20,6 +20,11 @@ function changeNavBackground(){
 window.addEventListener('scroll', changeNavBackground);
 /*---------- Nav color changing code start ----------*/
 
+/*Mobile nav varialbes start*/
+var mobileNavON = false;
+const mobileNav = document.getElementById("mobile_nav_links");
+/*---------- Mobile nav variables start ----------*/
+
 /*Reservation form code start*/
 function turnReservationFormOn(){
     reservationFormON = true;
@@ -32,3 +37,18 @@ function turnReservationFormOff(){
     reservationForm.style.pointerEvents = "none";
 }
 /*---------- Reservation form code start ----------*/
+
+/*Mobile nav code start*/
+function toggleMobileNav(){
+    if(mobileNavON){
+        mobileNavON = false;
+        mobileNav.style.opacity = "0.0";
+        mobileNav.style.pointerEvents = "none";
+    }
+    else{
+        mobileNavON = true;
+        mobileNav.style.opacity = "1.0";
+        mobileNav.style.pointerEvents = "all";
+    }
+}
+/*---------- Mobile nav code start ----------*/

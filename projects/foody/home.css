@@ -6,7 +6,7 @@ body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 main{
-    z-index: 105;
+    z-index: 99;
     overflow: hidden;
 }
 /*-------------------------------------------------------------------------------------------------------*/
@@ -85,7 +85,13 @@ nav h1{
     background-color: rgb(12, 198, 52);
     color: white;
 }
+#mobile_nav_reservations{
+    display: none;
+}
 #mobile_nav_links{
+    display: none;
+}
+nav p{
     display: none;
 }
 /*-------------------------------------------------------------------------------------------------------*/
@@ -372,7 +378,6 @@ footer{
     font-size: 35px;
     text-shadow: 0 0 10px gray;
 }
-
 #desserts{
     display: none;
 }
@@ -1023,14 +1028,16 @@ footer{
         position: fixed;
         width: 100vw;
         height: 100vh;
-        display: none;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        z-index: 100;
+        z-index: 99;
         background-color: rgb(15, 224, 61);
         background-image: url(pictures/wallpaper/green_wallpaper.jpg);
         background-size: 250px;
+        opacity: 0;
+        transition: 0.5s;
     }
     .mobie_nav_page{
         text-decoration: none;
@@ -1042,6 +1049,35 @@ footer{
     }
     #nav_links{
         display: none;
+    } 
+    nav p{
+        display: block;
+        position: relative;
+        font-size: 50px;
+        margin: 0 15px 0 0;
+        color: rgb(11, 145, 40);
+        z-index: 99;
+    }
+    #nav_reservations{
+        display: none;
+    }
+    #mobile_nav_reservations{
+        display: block;
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 7px 12px;
+        margin-right: 10px;
+        border: 3px rgb(12, 198, 52) solid;
+        transition: 0.25s;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(2.5px);
+    }
+    #mobile_nav_reservations:hover{
+        background-color: rgb(12, 198, 52);
+        color: white;
     }
     /*-------------------------------------------------------------------------------------------------------*/
         
@@ -1308,42 +1344,70 @@ footer{
         height: 35px;
     }
     /*-------------------------------------------------------------------------------------------------------*/
-
+    
     /*reservation modal*/
+    #reservation_modal{
+        opacity: 0;
+        pointer-events: none;
+        position: fixed;
+        height: 100vh;
+        width: 100vw;
+        z-index: 101;
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(5px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.75s;
+    }
     #reservation_modal_content{
-        height: 65%;
-        width: 90%;
+        background-color: white;
+        height: 100%;
+        width: 100%;
+        border-radius: 15px;
+        box-shadow: 0 0 10px black;
+        display: flex;
     }
     #reservation_modal_exit{
-        width: 20px;
-        height: 20px;
-        margin: -130% 0 0 -80%;
+        background-color: red;
+        position: fixed;
+        width: 25px;
+        height: 25px;
+        border-radius: 1000px;
+        box-shadow: 0 0 2.5px rgba(0, 0, 0, 0.5);
+        margin: -150% 0 0 -90%;
     }
     #reservation_modal_content h1{
-        font-size: 40px;
+        font-size: 45px;
     }
     #reservation_modal_content fieldset{
-        width: 85%;
+        width: 90%;
         height: 25px;
     }
+    #reservation_modal_content legend{
+        font-size: 27.5px;
+    }
     #reservation_modal_content select{
-        width: 80%;
-        height: 27.5px;
+        width: 75%;
     }
     #form_email input{
-        height: 27.5px;
-        width: 80%;
+        width: 75%;
     }
     #form_date input{
-        height: 27.5px;
-        width: 80%;
+        width: 75%;
     }
-    .form_arrival_time p{
-        margin: 0 10px;
-        font-size: 20px;
+    /*-------------------------------------------------------------------------------------------------------*/
+
+    /*enjoy*/
+    #enjoy{
+        min-height: 80vh;
+        padding: 10vh 0;
     }
-    #form_arrival_times hr{
-        height: 20px;;
+    #enjoy h1{
+        font-size: 45px;
+    }
+    #enjoy div{
+        font-size: 30px;
     }
     /*-------------------------------------------------------------------------------------------------------*/
 }
