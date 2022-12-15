@@ -20,6 +20,11 @@ var commentsSliderMargin = 0;
 const comments = document.getElementById("comments");
 /*---------- Comments slider variables end ----------*/
 
+/*Mobile comments slider variables start*/
+var mobileCommentsSliderMargin = 0;
+const mobileComments = document.getElementById("mobile_comments");
+/*---------- Comments slider variables end ----------*/
+
 /*Home slider code start*/
 function goToFirstPage(){
     homeSliderMargin = 0;
@@ -89,3 +94,16 @@ function previousComment(){
     comments.style.marginLeft = -commentsSliderMargin +"px";
 }
 /*---------- Comments slider code start ----------*/
+
+/*Mobile comments slider code start*/
+function nextMobileComment(){
+    if(mobileCommentsSliderMargin < 1348)
+    mobileCommentsSliderMargin += 337;
+    mobileComments.style.marginLeft = -mobileCommentsSliderMargin +"px";
+}
+function previousMobileComment(){
+    if(mobileCommentsSliderMargin > 0)
+        mobileCommentsSliderMargin -= 337;
+        mobileComments.style.marginLeft = -mobileCommentsSliderMargin +"px";
+}
+/*---------- Mobile comments slider code start ----------*/

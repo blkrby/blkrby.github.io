@@ -23,6 +23,7 @@ window.addEventListener('scroll', changeNavBackground);
 /*Mobile nav varialbes start*/
 var mobileNavON = false;
 const mobileNav = document.getElementById("mobile_nav_links");
+const navToggleButton = document.getElementById("nav_button");
 /*---------- Mobile nav variables start ----------*/
 
 /*Reservation form code start*/
@@ -44,11 +45,13 @@ function toggleMobileNav(){
         mobileNavON = false;
         mobileNav.style.opacity = "0.0";
         mobileNav.style.pointerEvents = "none";
+        navToggleButton.style.color = "rgb(11, 145, 40)";
     }
     else{
         mobileNavON = true;
         mobileNav.style.opacity = "1.0";
         mobileNav.style.pointerEvents = "all";
+        navToggleButton.style.color = "white";
     }
 }
 /*---------- Mobile nav code start ----------*/

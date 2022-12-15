@@ -604,16 +604,10 @@ footer{
     text-align: center;
     margin: 0 0 30px;
 }
-
 #comments_slider_holder{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.comments_slider_nav{
-    height: 50px;
-    margin: 0 10px;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
 }
 #comments_slider{
     height: 250px;
@@ -630,7 +624,6 @@ footer{
     grid-gap: 10px;
     transition: 1s;
 }
-
 .comment_card{
     height: 250px;
     width: 400px;
@@ -672,6 +665,9 @@ footer{
     margin: 0 auto;
     font-size: 23px;
     text-align: justify;
+}
+#mobile_comments_slider_holder{
+    display: none;
 }
 /*-------------------------------------------------------------------------------------------------------*/
 
@@ -1028,6 +1024,7 @@ footer{
         background-size: 250px;
         opacity: 0;
         transition: 0.5s;
+        pointer-events: none;
     }
     .mobie_nav_page{
         text-decoration: none;
@@ -1048,6 +1045,7 @@ footer{
         color: rgb(11, 145, 40);
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
         z-index: 99;
+        transition: 0.5s;
     }
     #nav_reservations{
         display: none;
@@ -1189,6 +1187,79 @@ footer{
     #comments_slider_holder{
         display: none;
     }
+    #mobile_comments_slider_holder{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #mobile_comments_slider{
+        height: 250px;
+        padding: 7.5px;
+        width: 325px;
+        display: flex;
+        overflow: hidden;
+        align-items: center;
+    }
+    #mobile_comments{
+        width: auto;
+        display: flex;
+        grid-gap: 0;
+        transition: 1s;
+    }
+    .mobile_comment_card{
+        height: 250px;
+        width: 325px;
+        background-color: white;
+        box-shadow: 0 0 10px black;
+        border-radius: 5px;
+        margin: 0 5px;
+    }
+    .mobile_comment_card_header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 5px 0 5px;
+    }
+    .mobile_comment_card_header img{
+        width: 22.5%;
+        border-radius: 1000px;
+    }
+    .mobile_comment_card_header_text{
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .mobile_commenter_name{
+        font-weight: bold;
+        font-family: Agency FB;
+        font-size: 30px;
+        margin: 0;
+        width: 95%;
+    }
+    .mobile_comment_location{
+        margin: 0;
+        font-size: 20px;
+        width: 95%;
+    }
+    .mobile_comment_card_content{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 23px;
+        text-align: justify;
+    }
+    #mobile_slider_nav{
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #mobile_slider_nav img{
+        height: 40px;
+        margin: 10px;
+    }
     /*-------------------------------------------------------------------------------------------------------*/
 
     /*footer*/
@@ -1311,7 +1382,7 @@ footer{
         margin: -150% 0 0 -90%;
     }
     #reservation_modal_content h1{
-        font-size: 45px;
+        font-size: 40px;
     }
     #reservation_modal_content fieldset{
         width: 90%;
@@ -1328,6 +1399,9 @@ footer{
     }
     #form_date input{
         width: 75%;
+    }
+    .form_arrival_time p{
+        font-size: 22px;
     }
     /*-------------------------------------------------------------------------------------------------------*/
 
