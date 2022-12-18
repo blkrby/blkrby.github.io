@@ -12,23 +12,23 @@
     align-items: center;
 }
 #menu_categorties{
-    width: 71%;
+    width: 100%;
     margin: 0;
     justify-content: center;
     align-items: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 250px);
-    grid-gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .selected{
     background-color: rgb(16, 138, 0);
 }
 .unselected{
-    background-color: rgb(30, 255, 0);
+    background-color: rgb(30, 200, 0);
 }
 .menu_category{
     padding: 10px;
-    margin: 0;
+    margin: 0 2.5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,7 +81,7 @@
     aspect-ratio: 1/1;
     width: 380px;
     padding: 10px;
-    background-color: rgb(0, 255, 0);
+    background-color: rgb(0, 200, 0);
 }
 .menu_item_name{
     width: 100%;
@@ -126,4 +126,39 @@
 }
 #drinks{
     display: none;
+}
+
+@media (max-width:850px){
+    .menu_category{
+        width: 200px;
+    }
+    .menu_category img{
+        height: 55px;
+    }
+    .menu_category p{
+        width: auto;
+        font-size: 45px;
+    }
+    
+    .menu_item img, .reverse_menu_item img{
+        width: 350px;
+        height: 350px;
+    }
+    .menu_item_description{
+        width: 330px;
+        height: 330px;
+    }
+    .menu_item_name{
+        font-size: 45px;
+        width: auto;
+    }
+    .menu_item_description_text{
+        font-size: 22.5px;
+    }
+    .menu_item_ingredients_title{
+        font-size: 30px;
+    }
+    .menu_item_ingresients_list li{
+        font-size: 20px;
+    }
 }
