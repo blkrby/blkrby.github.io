@@ -139,28 +139,50 @@
         width: auto;
         font-size: 45px;
     }
-    
+
+    .menu_item{
+        margin: 5px 0;
+        flex-direction: column;
+    }
+    .reverse_menu_item{
+        display: flex;
+        margin: 5px 0;
+        flex-direction: column;
+    }
     .menu_item img, .reverse_menu_item img{
-        width: 350px;
-        height: 350px;
+        aspect-ratio: 1/1;
+        width: 450px;
     }
     .menu_item_description{
-        width: 330px;
-        height: 330px;
+        aspect-ratio: none;
+        width: 430px;
+        min-height: 330px;
     }
     .menu_item_name{
-        font-size: 45px;
-        width: auto;
+        font-size: 65px;
+        text-align: center;
     }
     .menu_item_description_text{
-        font-size: 22.5px;
+        font-size: 30px;
+        text-align: center;
     }
     .menu_item_ingredients_title{
-        font-size: 30px;
+        text-align: center;
+        font-size: 45px;
+    }
+    .menu_item_ingresients_list{
+        margin: 0;
+        text-align: center;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
     }
     .menu_item_ingresients_list li{
-        font-size: 20px;
-    }
+        font-size: 30px;
+    } 
 }
 
 @media (max-width:450px){
