@@ -152,6 +152,9 @@ section h1{
     width: 180px;
     filter: drop-shadow(0 0 10px black);
 }
+#mobile_comments_slider{
+    display: none;
+}
 /*----------------------------------------------------------------------------------------------------------*/
 
 /*staff*/
@@ -182,7 +185,7 @@ section h1{
 .staff_member{
     aspect-ratio: 1/1;
     width: 250px;
-    border-radius: 5px;
+    border-radius: 1000px;
     border: 2.5px rgb(30, 200, 0) solid;
     display: flex;
     flex-direction: column;
@@ -315,25 +318,102 @@ section h1{
     /*----------------------------------------------------------------------------------------------------------*/
 }
 @media (max-width:450px){
+    section{
+        padding: 10vh 0;
+    }
     section h1{
-        font-size: 60px;
+        font-size: 50px;
         text-align: center;
         width: 90%;
     }
 
     /*reservation invite*/
     #reservation_invite h1{
-        font-size: 65px;
+        font-size: 60px;
     }
     #reservation_invite h2{
         width: 90%;
         text-align: center;
+        font-size: 40px;
     }
     /*----------------------------------------------------------------------------------------------------------*/
     
     /*identity*/
     #identity h2{
         font-size: 35px;
+    }
+    /*----------------------------------------------------------------------------------------------------------*/
+    
+    /*menu*/
+    #menu_categories{
+        grid-template-columns: repeat(auto-fill, 320px);
+        width: 75%;
+    }
+    .menu_category{
+        width: 320px;
+    }
+    /*----------------------------------------------------------------------------------------------------------*/
+
+    /*comments*/
+    #comments_slider_holder{
+        display: none;
+    }
+    #mobile_comments_slider{
+        width: 335px;
+        display: flex;
+        overflow: hidden;
+    }
+    #mobile_comments_holder{
+        display: flex;
+        width: 500%;
+    }
+    .mobile_comment_card{
+        border: 3px solid rgb(30, 200, 0);
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+        width: 330px;
+        padding: 10px;
+        margin: 0 5px;
+    }
+    .mobile_comment_card_header{
+        display: flex;
+        align-items: center;
+    }
+    .mobile_comment_card_header img{
+        width: 35%;
+        aspect-ratio: 1/1;
+        border-radius: 1000px;
+        border: 3px solid rgb(30, 200, 0);
+    }
+    .mobile_comment_card_header p{
+        width: 65%;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: Agency FB;
+        margin: 0 0 0 10px;
+    }
+    .mobile_comment_card_content{
+        text-align: justify;
+        font-size: 24px;
+        margin: 0;
+    }
+    #mobile_comments_slider_nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30px;
+    }
+    .mobile_slider_nav{
+        height: 18px;
+        width: 18px;
+        aspect-ratio: 1/1;
+        border: 3px solid rgb(30, 200, 0);
+        border-radius: 1000px;
+        margin: 0 3px;
+    }
+    .selected_mnv{
+        background-color: rgb(30, 200, 0);
     }
     /*----------------------------------------------------------------------------------------------------------*/
 }

@@ -305,14 +305,16 @@ footer{
     }
     /*----------------------------------------------------------------------------------------------------------*/    
 }
-
 @media (max-width:450px){
     /*nav*/
+    nav h1{
+        font-size: 32.5px;
+    }
     nav p{
         display: block;
         color: white;
         font-weight: bold;
-        font-size: 50px;
+        font-size: 45px;
         margin: 0 10px 0 0;
         text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
@@ -409,10 +411,10 @@ footer{
         align-items: center;
     }
     .footer_section h1{
-        font-size: 60px;
+        font-size: 50px;
     }
     .openning_hour p{
-        font-size: 25px;
+        font-size: 22.5px;
     }
     #sitemap{
         border-bottom: 3px solid white;
@@ -444,7 +446,73 @@ footer{
     }
     #page_header h1{
         color: white;
-        font-size: 65px;
+        font-size: 50px;
     }
     /*----------------------------------------------------------------------------------------------------------*/
+}
+
+@media (max-width:800px){
+    /*footer*/
+    #footer_sections{
+        flex-direction: column;
+        height: fit-content;
+        width: 75%;
+    }
+    #footer_logo{
+        width: 100%;
+        height: auto;
+        text-align: center;
+        border-bottom: 3px white solid;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer_logo h1{
+        font-size: 75px;
+        color: white;
+        margin: 0px;
+    }
+    #footer_logo h2{
+        width: 90%;
+        font-size: 55px;
+    }
+    .footer_section{
+        height: auto;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer_section h1{
+        font-size: 65px;
+    }
+    .openning_hour p{
+        font-size: 30px;
+    }
+    #sitemap{
+        border-bottom: 3px solid white;
+        padding-bottom: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sitemap_links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer_bottom{
+        width: 75%;
+        flex-direction: column;
+    }
+    #footer_bottom p{
+        text-align: center;
+        font-size: 30px;
+    }
+    /*----------------------------------------------------------------------------------------------------------*/  
 }

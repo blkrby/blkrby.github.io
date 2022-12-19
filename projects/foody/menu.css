@@ -192,26 +192,33 @@
         width: 350px;
     }
     .menu_item_description{
+        aspect-ratio: none;
         width: 330px;
-        height: 330px;
+        min-height: 330px;
     }
     .menu_item_name{
-        font-size: 47.5px;
+        font-size: 45px;
         text-align: center;
     }
     .menu_item_description_text{
-        font-size: 22.5px;
+        font-size: 20px;
         text-align: center;
     }
     .menu_item_ingredients_title{
         text-align: center;
-        font-size: 32.5px;
+        font-size: 30px;
     }
     .menu_item_ingresients_list{
         margin: 0;
         text-align: center;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
     }
     .menu_item_ingresients_list li{
-        font-size: 21.5px;
+        font-size: 20px;
     } 
 }

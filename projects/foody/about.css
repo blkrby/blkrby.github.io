@@ -115,21 +115,23 @@ iframe{
     }
 }
 @media (max-width:450px){
+    section{
+        padding: 5vh 0;
+    }
     section h1{
-        font-size: 65px;
+        font-size: 55px;
     }
     #who_are_we{
         flex-direction: column;
+        height: fit-content;
     }
     #who_are_we h1{
         width: auto;
         margin: 0;
     }
     #who_are_we h2{
-        width: 90%;
-        margin: 0;
-        font-size: 45px;
-        text-align: center;
+        font-size: 35px;
+        text-align: justify;
     }
     
     iframe{
@@ -156,46 +158,16 @@ iframe{
         text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     }
     
-    #strengths{
-        flex-direction: column;
-    }
-    #strengths h1{
-        color: rgb(30, 200, 0);
-    }
     .strengths{
-        margin-top: 25px;
-        width: 60%;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 300px);
-        grid-gap: 10px;
-        justify-content: center;
+        grid-template-columns: repeat(auto-fill, 275px);
     }
     .strength{
-        display: flex;
-        color: white;
-        text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(30, 200, 0);
-        aspect-ratio: 1/1;
-        width: 300px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        width: 275px;
     }
     .strength h2{
-        font-family: Agency FB;
-        font-size: 40px;
-        text-align:center;
-        width: 80%;
-        margin: 0;
+        font-size: 35px;
     }
     .strength h3{
-        width: 80%;
-        font-family: Agency FB;
-        font-weight: normal;
-        text-align: center;
-        font-size: 32.5px;
-        margin: 0;
+        font-size: 30px;
     }
 }
