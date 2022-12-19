@@ -136,3 +136,20 @@ form button:hover{
         width: 65%;
     }
 }
+
+@media (max-width:450px){
+    main{
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    form{
+        width: 90%;
+    }    
+    form hr{
+        width: 80%;
+    }
+    form div input,form div select{
+        width: 80%;
+    }
+}

@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
 }
-#menu_categorties{
+#menu_categories{
     width: 100%;
     margin: 0;
     justify-content: center;
@@ -161,4 +161,57 @@
     .menu_item_ingresients_list li{
         font-size: 20px;
     }
+}
+
+@media (max-width:450px){
+    #menu_categories{
+        margin-bottom: 15px;
+    }
+    .menu_category{
+        margin: 0 2.5px;
+        width: 80px;
+        height: 80px;
+    }
+    .menu_category p{
+        display: none;
+    }
+    .menu_category img{
+        margin: 0;
+    }
+    .menu_item{
+        margin: 5px 0;
+        flex-direction: column;
+    }
+    .reverse_menu_item{
+        display: flex;
+        margin: 5px 0;
+        flex-direction: column;
+    }
+    .menu_item img, .reverse_menu_item img{
+        aspect-ratio: 1/1;
+        width: 350px;
+    }
+    .menu_item_description{
+        width: 330px;
+        height: 330px;
+    }
+    .menu_item_name{
+        font-size: 47.5px;
+        text-align: center;
+    }
+    .menu_item_description_text{
+        font-size: 22.5px;
+        text-align: center;
+    }
+    .menu_item_ingredients_title{
+        text-align: center;
+        font-size: 32.5px;
+    }
+    .menu_item_ingresients_list{
+        margin: 0;
+        text-align: center;
+    }
+    .menu_item_ingresients_list li{
+        font-size: 21.5px;
+    } 
 }
