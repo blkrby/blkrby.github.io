@@ -151,11 +151,12 @@
     }
     .menu_item img, .reverse_menu_item img{
         aspect-ratio: 1/1;
-        width: 450px;
+        width: 670px;
     }
     .menu_item_description{
-        aspect-ratio: none;
-        width: 430px;
+        aspect-ratio: auto;
+        padding-bottom: 45px;
+        width: 650px;
         min-height: 330px;
     }
     .menu_item_name{
@@ -178,13 +179,34 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
+        width: 100%;
     }
     .menu_item_ingresients_list li{
         font-size: 30px;
     } 
 }
-
+@media (max-width:700px){
+    #menu_categories{
+        margin-bottom: 15px;
+    }
+    .menu_category{
+        margin: 0 2.5px;
+        width: 80px;
+        height: 80px;
+    }
+    .menu_category p{
+        display: none;
+    }
+    .menu_category img{
+        margin: 0;
+    }
+    .menu_item img, .reverse_menu_item img{
+        width: 550px;
+    }
+    .menu_item_description{
+        width: 530px;
+    }    
+}
 @media (max-width:450px){
     #menu_categories{
         margin-bottom: 15px;
