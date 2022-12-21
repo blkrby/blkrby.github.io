@@ -42,7 +42,7 @@
     margin-right: 10px;
 }
 .menu_category p{
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-weight: bold;
     font-size: 50px;
     color: white;
@@ -85,7 +85,7 @@
 }
 .menu_item_name{
     width: 100%;
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-size: 50px;
     color: white;
     font-weight: bold;
@@ -105,7 +105,7 @@
 }
 .menu_item_ingredients_title{
     width: 100%;
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-size: 35px;
     font-weight: bold;
     color: white;
@@ -238,7 +238,9 @@
     .menu_item_description{
         aspect-ratio: none;
         width: 330px;
-        min-height: 330px;
+        min-height: auto;
+        height: auto;
+        padding-bottom: 20px;
     }
     .menu_item_name{
         font-size: 45px;

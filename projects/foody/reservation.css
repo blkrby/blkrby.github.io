@@ -24,7 +24,7 @@ main{
 
 h1{
     color: rgb(30, 255, 0);
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-size: 65px;
     margin: 0px;
     text-shadow: 0 0 10px black;
@@ -62,7 +62,7 @@ form hr{
     color: white;
 }
 form div p{
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-weight: bold;
     color: white;
     font-size: 30px;
@@ -80,7 +80,7 @@ form div input,form div select{
 }
 
 form button{
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-size: 27.5px;
     margin-top: 25px;
     padding: 3px 20px;
@@ -138,6 +138,9 @@ form button:hover{
 }
 
 @media (max-width:450px){
+    h1{
+        font-size: 50px;
+    }
     main{
         padding: 0;
         height: 100%;

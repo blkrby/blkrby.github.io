@@ -7,7 +7,7 @@ section{
     align-items: center;
 }
 section h1{
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-size: 75px;
     margin: 0;
 }
@@ -26,14 +26,14 @@ section h1{
 }
 #reservation_invite h1{
     margin: 0;
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-size: 75px;
     color: white;
     text-shadow: 0 0 10px black;
 }
 #reservation_invite h2{
     margin: 10px 0;
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-size: 40px;
     font-weight: normal;
     color: white;
@@ -79,7 +79,7 @@ section h1{
 #identity a{
     color: white;
     text-decoration: none;
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-weight: bold;
     font-size: 35px;
     padding: 5px 15px;
@@ -139,7 +139,7 @@ section h1{
     transform: scale(1.1);
 }
 .menu_category_title{
-    font-family: Agency FB;
+    font-family: "Agency FB";
     color: white;
     font-weight: bold;
     font-size: 65px;
@@ -222,7 +222,7 @@ section h1{
     filter: blur(0px);
 }
 .staff_member_name{
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-weight: bold;
     font-size: 35px;
     color: white;
@@ -230,7 +230,7 @@ section h1{
     margin: 0 0 5px;
 }
 .staff_member_position{
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-weight: normal;
     font-size: 30px;
     color: white;
@@ -293,7 +293,7 @@ section h1{
 }
 .comment_card_header p{
     font-size: 40px;
-    font-family: Agency FB;
+    font-family: "Agency FB";
     font-weight: bold;
     margin: 0 0 0 15px;
 }
@@ -358,6 +358,9 @@ section h1{
     #comments_slider_holder{
         display: none;
     }
+    #mobile_comments_slider_holder{
+        margin-top: 25px;
+    }
     #mobile_comments_slider{
         width: 335px;
         display: flex;
@@ -366,6 +369,7 @@ section h1{
     #mobile_comments_holder{
         display: flex;
         width: 500%;
+        transition: 1s;
     }
     .mobile_comment_card{
         border: 3px solid rgb(30, 200, 0);
@@ -389,7 +393,7 @@ section h1{
         width: 65%;
         font-size: 40px;
         font-weight: bold;
-        font-family: Agency FB;
+        font-family: "Agency FB";
         margin: 0 0 0 10px;
     }
     .mobile_comment_card_content{
