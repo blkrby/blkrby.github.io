@@ -100,21 +100,21 @@ section h1{
 #menu_categories{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, 360px);
-    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, 325px);
+    grid-gap: 7.5px;
     justify-content: center;
     margin-top: 30px;
 }
 .menu_category{
     aspect-ratio: 1/1;
-    width: 360px;
+    width: 325px;
     background-color: rgb(30, 200, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     overflow: hidden;
 }
 .menu_category_banner{
