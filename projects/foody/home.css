@@ -382,11 +382,12 @@ section h1{
     
     /*menu*/
     #menu_categories{
-        grid-template-columns: repeat(auto-fill, 320px);
+        grid-template-columns: repeat(auto-fill, 290px);
         width: 75%;
     }
     .menu_category{
-        width: 320px;
+        width: 290px;
+        height: 290px;
     }
     /*----------------------------------------------------------------------------------------------------------*/
 
