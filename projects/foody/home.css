@@ -177,7 +177,7 @@ section h1{
 }
 #staff_members{
     display: grid;
-    width: 75%;
+    width: 76.95%;
     grid-template-columns: repeat(auto-fill, 275px);
     grid-gap: 20px;
     justify-content: center;

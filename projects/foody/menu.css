@@ -76,6 +76,7 @@
 .menu_item img, .reverse_menu_item img{
     aspect-ratio: 1/1;
     width: 425px;
+    height: 425px;
 }
 .menu_item_description{
     aspect-ratio: 1/1;
