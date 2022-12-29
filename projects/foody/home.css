@@ -108,6 +108,7 @@ section h1{
 .menu_category{
     aspect-ratio: 1/1;
     width: 325px;
+    height: 325px;
     background-color: rgb(30, 200, 0);
     display: flex;
     flex-direction: column;

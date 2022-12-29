@@ -202,6 +202,7 @@
     }
     .menu_item img, .reverse_menu_item img{
         width: 550px;
+        height: 550px;
     }
     .menu_item_description{
         width: 530px;
@@ -234,6 +235,7 @@
     .menu_item img, .reverse_menu_item img{
         aspect-ratio: 1/1;
         width: 350px;
+        height: 350px;
     }
     .menu_item_description{
         aspect-ratio: none;
