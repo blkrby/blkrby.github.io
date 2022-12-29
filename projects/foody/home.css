@@ -99,7 +99,7 @@ section h1{
 }
 #menu_categories{
     display: grid;
-    width: 100%;
+    width: 90%;
     grid-template-columns: repeat(auto-fill, 325px);
     grid-gap: 7.5px;
     justify-content: center;
@@ -311,6 +311,41 @@ section h1{
 /*----------------------------------------------------------------------------------------------------------*/
 
 @media (max-width:850px){
+    section{
+        padding: 10vh 0;
+    }
+
+    /*staff*/
+    #staff h2{
+        width: 90%;
+    }
+    #staff_members{
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, 225px);
+    }
+    .staff_member{
+        aspect-ratio: 1/1;
+        width: 225px;
+    }
+    /*----------------------------------------------------------------------------------------------------------*/
+
+    /*menu*/
+    #menu_categories{
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, 235px);
+    }
+    .menu_category{
+        width: 235px;
+        height: 235px;
+    }
+    .menu_category_title{
+        font-size: 50px;
+    }
+    .menu_category_icon{
+        width: 125px;
+    }
+    /*----------------------------------------------------------------------------------------------------------*/
+
     /*comments*/
     #comments_slider{
         width: 390px;
