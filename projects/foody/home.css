@@ -390,6 +390,18 @@ section h1{
         height: 290px;
     }
     /*----------------------------------------------------------------------------------------------------------*/
+    #staff_members{
+        grid-template-columns: repeat(auto-fill, 280px);
+    }
+    .staff_member{
+        width: 280px;
+    }
+    .staff_member_name{
+        font-size: 32.5px;
+    }
+    .staff_member_position{
+        font-size: 27.5px;
+    }
 
     /*comments*/
     #comments_slider_holder{
