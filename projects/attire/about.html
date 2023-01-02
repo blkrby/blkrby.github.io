@@ -7,11 +7,24 @@
 
     <link rel="stylesheet" href="about.css">
     <link rel="stylesheet" href="general.css">
+    
+    <link rel="shortcut icon" href="pictures/branding/tab logo.png">
+
+    <script defer src="general.js"></script>
 
     <title>Attire - Best online clothing store</title>
 </head>
 
 <body>
+    <div id="cart_holder">
+        <div id="cart">
+            <div id="cart_header">
+                <img src="pictures/icons/random/close.png" onclick="closeCartTab()" alt="">
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+
     <nav>
         <a href=""><img id="nav_logo" src="pictures/branding/Attire logo.png" alt=""></a>
 
@@ -28,7 +41,7 @@
                 <p>Log in</p>
             </a>
 
-            <div id="nav_cart">
+            <div id="nav_cart" onclick="openCartTab()">
                 <img src="pictures/icons/random/shop.png" alt="">
                 <p>0</p>
             </div>
@@ -67,18 +80,37 @@
 
                 <div id="contact_numbers">
                     <div class="number">
-                        <img src="pictures/icons/socials/instagram.png" alt="">
+                        <img src="pictures/icons/socials/phone.png" alt="">
                         <p>1-800-XXX-XXX</p>
                     </div>
                     <div class="number">
-                        <img src="pictures/icons/socials/instagram.png" alt="">
+                        <img src="pictures/icons/socials/phone.png" alt="">
                         <p>1-800-XXX-XXX</p>
                     </div>
                     <a href="" class="email">
-                        <img src="pictures/icons/socials/instagram.png" alt="">
+                        <img src="pictures/icons/socials/mail.png" alt="">
                         <p>info@attire.com</p>
                     </a>
                 </div>
+            </div>
+        </section>
+
+        <section id="arguments">
+            <div class="argument">
+                <img src="pictures/icons/arguments/shipping.png" alt="">
+                <p>World wide shipping</p>
+            </div>
+            <div class="argument">
+                <img src="pictures/icons/arguments/security.png" alt="">
+                <p>Secure payments</p>
+            </div>
+            <div class="argument">
+                <img src="pictures/icons/arguments/quality.png" alt="">
+                <p>Good quality</p>
+            </div>
+            <div class="argument">
+                <img src="pictures/icons/arguments/money.png" alt="">
+                <p>Affordable prices</p>
             </div>
         </section>
     </main>
@@ -127,3 +159,4 @@
         </div>
     </footer>  
 </body>
+</html>

@@ -7,12 +7,24 @@
 
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="general.css">
+    
+    <link rel="shortcut icon" href="pictures/branding/tab logo.png">
 
     <script defer src="home.js"></script>
+    <script defer src="general.js"></script>
 
     <title>Attire - Best online clothing store</title>
 </head>
 <body>
+    <div id="cart_holder">
+        <div id="cart">
+            <div id="cart_header">
+                <img src="pictures/icons/random/close.png" onclick="closeCartTab()" alt="">
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+
     <nav>
         <a href=""><img id="nav_logo" src="pictures/branding/Attire logo.png" alt=""></a>
 
@@ -29,7 +41,7 @@
                 <p>Log in</p>
             </a>
 
-            <div id="nav_cart">
+            <div id="nav_cart" onclick="openCartTab()">
                 <img src="pictures/icons/random/shop.png" alt="">
                 <p>0</p>
             </div>
@@ -100,59 +112,67 @@
                 <div id="popular_products_holder">
                     <div class="popular_products" id="popular_products_thing">
                         <a href="" class="popular_product">
-                            <img src="" alt="">
+                            <img src="pictures/products/product dummy 1.jpg" alt="">
                             <div class="popular_product_text">
                                 <p class="popular_product_title">Product title</p>
                                 <p class="popular_product_price">$XXX</p>
+                                <img src="pictures/icons/random/cart.png" alt="">
                             </div>
                         </a>
                         <a href="" class="popular_product">
-                            <img src="" alt="">
+                            <img src="pictures/products/product dummy 2.jpg" alt="">
                             <div class="popular_product_text">
                                 <p class="popular_product_title">Product title</p>
                                 <p class="popular_product_price">$XXX</p>
+                                <img src="pictures/icons/random/cart.png" alt="">
                             </div>
                         </a>
                         <a href="" class="popular_product">
-                            <img src="" alt="">
+                            <img src="pictures/products/product dummy 3.jpg" alt="">
                             <div class="popular_product_text">
                                 <p class="popular_product_title">Product title</p>
                                 <p class="popular_product_price">$XXX</p>
+                                <img src="pictures/icons/random/cart.png" alt="">
                             </div>
                         </a>
                         <a href="" class="popular_product">
-                            <img src="" alt="">
+                            <img src="pictures/products/product dummy 1.jpg" alt="">
                             <div class="popular_product_text">
                                 <p class="popular_product_title">Product title</p>
                                 <p class="popular_product_price">$XXX</p>
+                                <img src="pictures/icons/random/cart.png" alt="">
                             </div>
                         </a>
                         <a href="" class="popular_product">
-                            <img src="" alt="">
+                            <img src="pictures/products/product dummy 2.jpg" alt="">
                             <div class="popular_product_text">
                                 <p class="popular_product_title">Product title</p>
                                 <p class="popular_product_price">$XXX</p>
+                                <img src="pictures/icons/random/cart.png" alt="">
                             </div>
                         </a>
                         <a href="" class="popular_product">
-                            <img src="" alt="">
+                            <img src="pictures/products/product dummy 3.jpg" alt="">
                             <div class="popular_product_text">
                                 <p class="popular_product_title">Product title</p>
                                 <p class="popular_product_price">$XXX</p>
+                                <img src="pictures/icons/random/cart.png" alt="">
                             </div>
                         </a>
                         <a href="" class="popular_product">
-                            <img src="" alt="">
+                            <img src="pictures/products/product dummy 1.jpg" alt="">
                             <div class="popular_product_text">
                                 <p class="popular_product_title">Product title</p>
                                 <p class="popular_product_price">$XXX</p>
+                                <img src="pictures/icons/random/cart.png" alt="">
                             </div>
                         </a>
                         <a href="" class="popular_product">
-                            <img src="" alt="">
+                            <img src="pictures/products/product dummy 2.jpg" alt="">
                             <div class="popular_product_text">
                                 <p class="popular_product_title">Product title</p>
                                 <p class="popular_product_price">$XXX</p>
+                                <img src="pictures/icons/random/cart.png" alt="">
                             </div>
                         </a>
                     </div>
@@ -173,6 +193,10 @@
             <div class="argument">
                 <img src="pictures/icons/arguments/quality.png" alt="">
                 <p>Good quality</p>
+            </div>
+            <div class="argument">
+                <img src="pictures/icons/arguments/money.png" alt="">
+                <p>Affordable prices</p>
             </div>
         </section>
     </main>

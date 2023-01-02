@@ -61,6 +61,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #e2e2e2;
 }
 .social{
     background-color: white;
@@ -81,6 +82,7 @@
     color: black;
     font-size: 25px;
     margin-left: 15px;
+    transform: rotateX('angle');
 }
 .number, .email{
     background-color: white;
@@ -101,5 +103,31 @@
     color: black;
     font-size: 25px;
     margin-left: 15px;
+}
+/*--------------------------------------------------------------------------------*/
+
+/*arguments*/
+#arguments{
+    margin-top: 20px;
+    padding: 50px 0;
+    background-color: #e2e2e2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.argument{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+}
+.argument img{
+    height: 60px;
+}
+.argument p{
+    font-size: 22.5px;
+    text-align: center;
+    margin: 5px 0 0;
 }
 /*--------------------------------------------------------------------------------*/
