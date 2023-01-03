@@ -129,6 +129,9 @@ footer{
 }
 #footer_info_email a{
     margin: 0;
+    text-decoration: none;
+    color: black;
+    margin-left: 4px;
 }
 #footer_faq{
     display: flex;
