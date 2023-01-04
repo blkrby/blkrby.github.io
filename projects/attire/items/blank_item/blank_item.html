@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../items.css">
+    <link rel="stylesheet" href="../../general.css">
+    
+    <link rel="shortcut icon" href="../../pictures/branding/tab logo.png">
+
+    <script defer src="../items.js"></script>
+    <script defer src="../../general.js"></script>
+
+    <title>Item name - Attire</title>
+</head>
+
+<body>
+    <div id="cart_holder">
+        <div id="cart">
+            <div id="cart_header">
+                <img src="../../pictures/icons/random/close.png" onclick="closeCartTab()" alt="">
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a href=""><img id="nav_logo" src="../../pictures/branding/Attire logo.png" alt=""></a>
+
+        <div id="nav_content">
+            <div id="nav_links">
+                <a class="nav_page" href="../../home.html">Home</a>
+                <a class="nav_page" href="../../store.html">Store</a>
+                <a class="nav_page" href="../../blog.html">Blog</a>
+                <a class="nav_page" href="../../about.html">About</a>
+            </div>
+
+            <a href="../../log_in.html" id="nav_log_in">
+                <img src="../../pictures/icons/random/no account.png" alt="">
+                <p>Log in</p>
+            </a>
+
+            <div id="nav_cart" onclick="openCartTab()">
+                <img src="../../pictures/icons/random/shop.png" alt="">
+                <p>0</p>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div id="product_content">
+            <div id="product_picture_slider">
+                <div id="product_picture_holder">
+                    <div id="product_pictures">
+                        <img src="item_picture1.jpg" alt="">
+                        <img src="item_picture2.jpg" alt="">
+                        <img src="item_picture3.jpg" alt="">
+                        <img src="item_picture4.jpg" alt="">
+                        <img src="item_picture5.jpg" alt="">
+                    </div>
+                </div>
+                <div id="product_pictures_selector">
+                    <img src="item_picture1.jpg" alt="" id="pic_sel1" class="selector_picture current_picture" onclick="goToPicture1()">
+                    <img src="item_picture2.jpg" alt="" id="pic_sel2" class="selector_picture" onclick="goToPicture2()">
+                    <img src="item_picture3.jpg" alt="" id="pic_sel3" class="selector_picture" onclick="goToPicture3()">
+                    <img src="item_picture4.jpg" alt="" id="pic_sel4" class="selector_picture" onclick="goToPicture4()">
+                    <img src="item_picture5.jpg" alt="" id="pic_sel5" class="selector_picture" onclick="goToPicture5()">
+                </div>
+            </div>
+            <div id="product_details">
+                <p id="product_name">Product name</p>
+                <div id="product_id"><p>ID : </p><span>XXXXXX</span></div>
+                <p id="product_price">$XXX</p>
+
+                <div id="size_holder">
+                    <label for="size">Size</label>
+                    <select name="" id="size">
+                        <option value="">Select</option>
+                        <option value="">45</option>
+                        <option value="">44</option>
+                        <option value="">43</option>
+                        <option value="">42</option>
+                        <option value="">41</option>
+                        <option value="">39</option>
+                        <option value="">38</option>
+                        <option value="">37</option>
+                        <option value="">36</option>
+                        <option value="">35</option>
+                    </select>
+                </div>
+
+                <div id="amount_holder">
+                    <label for="amount">Quantity</label><br>
+                    <input type="number" name="" id="amount" min="1" max="10">
+                </div>
+
+                <div id="buttons">
+                    <button id="add_to_cart">Add to cart</button>
+                    <button id="buy">Buy now</button>
+                </div>
+
+                <div id="product_info">
+                    <div class="product_info_section">
+                        <div class="project_info_header" onclick="togglepc1()"">
+                            <p>Product description</p>
+                            <div class="project_toggle">
+                                <div class="project_toggle_content">
+                                    <p id="toggleplus1">+</p>
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_info_content" id="category1">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt doloribus nemo esse dolores quasi magnam deserunt pariatur, expedita, in earum ratione soluta similique corrupti nam ab dolor consequatur ipsam?
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="product_info_section">
+                        <div class="project_info_header" onclick="togglepc2()">
+                            <p>Return & refund policy</p>
+                            <div class="project_toggle">
+                                <div class="project_toggle_content">
+                                    <p id="toggleplus2">+</p>
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_info_content" id="category2">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt doloribus nemo esse dolores quasi magnam deserunt pariatur, expedita, in earum ratione soluta similique corrupti nam ab dolor consequatur ipsam?
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="product_info_section">
+                        <div class="project_info_header" onclick="togglepc3()">
+                            <p>Shipping info</p>
+                            <div class="project_toggle">
+                                <div class="project_toggle_content">
+                                    <p  id="toggleplus3">+</p>
+                                    <p>-</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_info_content" id="category3">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit nesciunt doloribus nemo esse dolores quasi magnam deserunt pariatur, expedita, in earum ratione soluta similique corrupti nam ab dolor consequatur ipsam?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer_section" id="footer_sitemap">
+            <a class="footer_page" href="home.html">Home</a>
+            <a class="footer_page" href="store.html">Store</a>
+            <a class="footer_page" href="blog.html">Blog</a>
+            <a class="footer_page" href="about.html">About</a>
+        </div>
+
+        <div class="footer_section" id="footer_info">
+            <p id="footer_info_adress">
+                123 fake name street, fake name city.
+            </p>
+
+            <div id="footer_info_email">
+                <p>Email : </p>
+                <a href="">info@attire.com</a>
+            </div>
+
+            <p id="footer_info_phone">
+                <p>Telephone : 1-800-XXX-XXX</p>
+            </p>
+        </div>
+
+        <div class="footer_section" id="footer_faq">
+            <a href="">Shipping & returns</a>
+            <a href="">Q&A</a>
+
+            <div id="footer_faq_socials">
+                <a href=""><img src="../../pictures/icons/socials/facebook.png" alt=""></a>
+                <a href=""><img src="../../pictures/icons/socials/instagram.png" alt=""></a>
+                <a href=""><img src="../../pictures/icons/socials/twitter.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer_section" id="footer_subscription">
+            <p>Recieve emails about the latest drops</p>
+
+            <form action="">
+                <input type="email" name="" id="">
+                <button type="submit">Subscribe now</button>
+            </form>
+        </div>
+    </footer>  
+</body>
+</html>

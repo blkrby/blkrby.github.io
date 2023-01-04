@@ -1,0 +1,40 @@
+h1{
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 0 0 30px;
+}
+#articles{
+    width: 100%;
+}
+.article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+    margin: 10px 0;
+}
+.article img{
+    aspect-ratio: 16/9;
+    width: 30%;
+}
+.article_content{
+    margin-left: 2%;
+    width: 68%;
+}
+.article_title{
+    font-weight: bold;
+    font-size: 27.5px;
+    margin: 0;
+}
+.article_date{
+    margin: 0 0 10px;
+    font-size: 15px;
+}
+.article_description{
+    text-align: justify;
+    font-size: 20px;
+}

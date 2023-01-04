@@ -190,19 +190,6 @@
 .popular_product_price{
     margin: 0;
 }
-.popular_product_text a{
-    height: 50px;
-    margin: 0;
-}
-.popular_product_text img{
-    height: 35px;
-    width: 35px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 1000px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    margin-top: 5px;
-}
 /*--------------------------------------------------------------------------------*/
 
 /*arguments*/

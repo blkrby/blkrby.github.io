@@ -54,8 +54,8 @@
 }
 #contact_socials, #contact_numbers{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     margin: 0 10px;
     display: flex;
     flex-direction: column;
