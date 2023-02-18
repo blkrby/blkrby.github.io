@@ -1,0 +1,194 @@
+/*who_are_we*/
+#who_are_we{
+    padding: 50px 0 125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#who_are_we_illustration{
+    height: 60vh;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+#who_are_we_text{
+    width: 37vw;
+    margin-left: 25px;
+}
+#who_are_we_text img{
+    height: 15vh;
+    filter: drop-shadow(0 0 10px black);
+}
+#who_are_we_text p{
+    font-size: 40px;
+    color: white;
+    text-align: justify;
+    margin: 15px 0;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/*why_choose_us*/
+#why_choose_us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 150px;
+}
+#why_choose_us_content{
+    display: flex;
+    justify-content: center;
+}
+#values, #method{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 500px;
+    margin: 0 5px;
+    padding: 25px 0;
+}
+.value{
+    margin: 5px 0;
+    overflow: hidden;
+    height: 50px;
+    transition: 0.5s;
+}
+.value:hover{
+    height: 250px;
+}
+.value_header{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: fit-content;
+    background-color: black;
+}
+.value_number{
+    background-color: rgb(0, 0, 20);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+    height: inherit;
+    font-size: 25px;
+}
+.value_title{
+    color: white;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    width: 275px;
+}
+.value_description{
+    width: 325px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(10, 10, 10);
+}
+.value_description p{
+    font-size: 25px;
+    text-align: justify;
+    color: white;
+    width: 80%;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/*staff*/
+#staff{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 100px;
+}
+#staff_description{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    width: 60%;
+    margin: 0 0 30px;
+}
+
+.crew{
+    background-color: black;
+    padding: 25px;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+.crew_content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 225px);
+    justify-content: center;
+    grid-gap: 25px;
+}
+
+.staff_member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+.staff_member img{
+    aspect-ratio: 1/1;
+    width: inherit;
+}
+.staff_member_name{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    width: inherit;
+    text-align: center;
+}
+.staff_member_position{
+    font-size: 17.5px;
+    margin: 0;
+}
+/*---------------------------------------------------------------------------------------------------*/
+
+/*trusted brands*/
+#trusted_brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trusted_brand_holder{
+    aspect-ratio: 1/1;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trusted_brand, .trusted_brand_holder a{
+    aspect-ratio: inherit;
+    width: 90%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.trusted_brand{
+    transition: 0.25s;
+    border: 3px solid rgba(255, 255, 255, 0.25);
+}
+.trusted_brand:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.trusted_brand img{
+    height: 65%;
+    max-height: 90%;
+}
+/*---------------------------------------------------------------------------------------------------*/

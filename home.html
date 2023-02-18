@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="general.css">
+
+    <script defer src="home.js"></script>
+    <script defer src="general.js"></script>
+
+    <link rel="shortcut icon" href="pictures/branding/nav_icon.png" type="image/x-icon">
+    <title>Home - Black Ruby Agency</title>
+</head>
+<body>
+    <nav>
+        <a href=""><img id="nav_logo" src="pictures/branding/black_ruby_logo_circled_white.png" alt=""></a>
+
+        <ul id="nav_links">
+            <li><a class="current_nav_page" href="home.html">Home</a></li>
+            <li><p class="nav_page" id="services_nav_link" href="services.html">Service</p></li>
+            <li><a class="nav_page" href="about.html">About us</a></li>
+        </ul>
+    </nav>
+
+    <div id="services_menu">
+        <a href="" class="current_service_page">Web development</a>
+        <a href="" class="service_page">Digital marketing</a>
+        <a href="" class="service_page">Graphic design</a>
+    </div>
+
+    <main>
+        <section id="who_are_we">
+            <img id="who_are_we_illustration" src="pictures/branding/3d_gem.png" alt="">
+            <div id="who_are_we_text">
+                <img src="pictures/branding/black_ruby_logo_with_text white.png" alt="">
+                <p>Black Ruby is an online-based agency that helps businesses establish and manage their brand online by offering the necessary services.</p>
+                <a href="about.html">Learn more</a>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="service" id="service1">
+                <div class="service_content">
+                    <p class="service_number">01</p>
+                    <p class="service_title">Web development</p>
+                    <p class="service_description">
+                        Description of the service Description of the service Description of the service Description of the service.
+                    </p>
+                    <a href="">More</a>
+                </div>
+            </div>
+            <hr class="services_hr">
+            <div class="service" id="service2">
+                <div class="service_content">
+                    <p class="service_number">02</p>
+                    <p class="service_title">Digital marketing</p>
+                    <p class="service_description">
+                        Description of the service Description of the service Description of the service Description of the service.
+                    </p>
+                    <a href="">More</a>
+                </div>
+            </div>
+            <hr class="services_hr">
+            <div class="service" id="service3">
+                <div class="service_content">
+                    <p class="service_number">03</p>
+                    <p class="service_title">Graphic design</p>
+                    <p class="service_description">
+                        Description of the service Description of the service Description of the service Description of the service.
+                    </p>
+                    <a href="">More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h3>See our work</h3>
+
+            <div id="project_category_selector">
+                <div id="project_category_selector_top">
+                    <p onclick="selectProjectCategory1()">Web development</p>
+                    <p onclick="selectProjectCategory2()">Digital marketing</p>
+                    <p onclick="selectProjectCategory3()">Graphic design</p>
+                </div>
+                <div id="project_category_selector_bottom">
+                    <div id="project_category_pointer"></div>
+                </div>
+            </div>
+
+            <div id="project_categories_holder">
+                <div id="project_categories">
+                    <div class="project_category">
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project_category">
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="project_category">
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                        <a href="" class="project">
+                            <img src="" alt="">
+                            <div class="project_text">
+                                <p>Project</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="why_choose_us">
+            <h3>Why choose us ?</h3>
+
+            <div id="values">
+                <h4>Our values</h4>
+
+                <div class="value">
+                    <div class="value_header">
+                        <p class="value_number">1</p>
+                        <p class="value_title">Quality</p>
+                    </div>
+                    <div class="value_description">
+                        <p>
+                            We evaluate our work using the highest quality stardards to deliver the best service.
+                        </p>
+                    </div>
+                </div>
+                <div class="value">
+                    <div class="value_header">
+                        <p class="value_number">2</p>
+                        <p class="value_title">Punctuality</p>
+                    </div>
+                    <div class="value_description">
+                        <p>
+                            We deliver the intended work at the intended time.
+                        </p>
+                    </div>
+                </div>
+                <div class="value">
+                    <div class="value_header">
+                        <p class="value_number">3</p>
+                        <p class="value_title">Respect</p>
+                    </div>
+                    <div class="value_description">
+                        <p>
+                            We respect our customers and command respect from them in all our interactions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div id="method">
+                <h4>Our method</h4>
+
+                <p id="method_description">
+                    We use a proven and efficient method to always deliver quality work on time. 
+                </p>
+
+                <div id="methods">
+                    <div class="method left">
+                        <div class="method_number">01</div>
+                        <div class="method_content">
+                            <p class="method_title">Method title</p>
+                            <div class="method_description">
+                                <p class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam nobis voluptatem repellendus quos labore, minima omnis!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method right">
+                        <div class="method_number">02</div>
+                        <div class="method_content">
+                            <p class="method_title">Method title</p>
+                            <div class="method_description">
+                                <p class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam nobis voluptatem repellendus quos labore, minima omnis!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="method left">
+                        <div class="method_number">03</div>
+                        <div class="method_content">
+                            <p class="method_title">Method title</p>
+                            <div class="method_description">
+                                <p class="">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quibusdam nobis voluptatem repellendus quos labore, minima omnis!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trusted_by">
+            <h3>Trusted by</h3>
+
+            <div id="trusted_brands">
+                <div class="trusted_brand_holder">
+                    <a href="https://www.amazon.com/" target="_blank">
+                        <div class="trusted_brand">
+                            <img src="pictures/trusting_brands/amazon.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="trusted_brand_holder">
+                    <a href="https://www.google.com/" target="_blank">
+                        <div class="trusted_brand">
+                            <img src="pictures/trusting_brands/google.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="trusted_brand_holder">
+                    <a href="https://www.hp.com/" target="_blank">
+                        <div class="trusted_brand">
+                            <img src="pictures/trusting_brands/hp.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="trusted_brand_holder">
+                    <a href="https://www.meta.com/" target="_blank">
+                        <div class="trusted_brand">
+                            <img src="pictures/trusting_brands/meta.png" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="trusted_brand_holder">
+                    <a href="https://www.google.com/" target="_blank">
+                        <div class="trusted_brand">
+                            <img src="pictures/trusting_brands/google.png" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href=""><img id="footer_logo" src="pictures/branding/black_ruby_logo_with_text white.png" alt=""></a>
+        <div id="footer_sitemap">
+            <a class="current_footer_page" href="home.html">Home</a>
+            <p class="footer_page">Services</p>
+            <a class="footer_page" href="about.html">About us</a>
+        </div>
+        <hr id="footer_hr">
+        <div id="footer_bottom">
+            <p id="footer_copy">&copy; Black Ruby Agency. All rights reserved</p>
+            <div id="footer_bottom_links">
+                <a href="">Contact us</a>
+                <hr>
+                <a href="">Privacy policy</a>
+                <hr>
+                <a href="">Terms of service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
