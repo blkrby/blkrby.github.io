@@ -73,6 +73,7 @@ nav{
     align-items: center;
     border-radius: 10px;
     overflow: hidden;
+    transition: 0.5s;
 }
 #services_menu a{
     text-decoration: none;
