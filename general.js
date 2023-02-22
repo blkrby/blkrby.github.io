@@ -1,22 +1,24 @@
-/*services page variables start*/
+/*services nav menu variables start*/
 let servicesMenuOn = false;
 const servicesNavLink = document.getElementById("services_nav_link");
 const servicesMenu = document.getElementById("services_menu");
-/*---------- services page variables start ----------*/
+/*---------- services nav menu variables end ----------*/
 
-/*services page code start*/
-function toggleServicesMenu(){
+/*services nav menu code start*/
+function turnServicesMenuOn(){
+    servicesMenuOn = true;
+    servicesMenu.style.height = "300px";
+}
+function turnServicesMenuOff(){
     if(servicesMenuOn){
         servicesMenuOn = false;
-        servicesMenu.style.height = "0";
+        servicesMenu.style.height = "0px";
     }
-    else{
-        servicesMenuOn = true;
-        servicesMenu.style.height = "300px";
-    }
-    console.log("fff")
 }
 
-servicesNavLink.addEventListener('pointerover', toggleServicesMenu);
-servicesMenu.addEventListener('pointerleave', toggleServicesMenu);
-/*---------- services page code start ----------*/
+servicesNavLink.addEventListener('pointerenter', turnServicesMenuOn);
+
+servicesMenu.addEventListener('pointerleave', turnServicesMenuOff);
+window.addEventListener('click', turnServicesMenuOff);
+window.addEventListener('scroll', turnServicesMenuOff);
+/*---------- services nav menu code end ----------*/

@@ -20,14 +20,15 @@ h3{
 }
 h4{
     color: white;
-    font-size: 30px;
+    font-size: 45px;
     margin: 0 0 15px;
 }
 /*---------------------------------------------------------------------------------------------------*/
 
 /*nav*/
 nav{
-    padding: 15px;
+    min-height: 10vh;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +47,7 @@ nav{
 #nav_links li a, #nav_links li p{
     text-decoration: none;
     font-size: 25px;
-    padding: 2px 20px;
+    padding: 1px 20px;
     color: white;
     margin: 0 0 0 10px;
     font-weight: bold;
@@ -61,40 +62,39 @@ nav{
 }
 
 #services_menu{
-    width: 300px;
-    height: 0;
-    background-color: black;
     position: absolute;
+    background-color: black;
+    width: 300px;
+    height: 0px;
     z-index: 100;
     left: 72%;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
     overflow: hidden;
     transition: 0.5s;
 }
-#services_menu a{
+.service_page, .current_service_page{
     text-decoration: none;
     font-size: 25px;
+    text-align: center;
+    width: 75%;
+    margin: 5px 0;
     padding: 8px 15px;
     border-radius: 1000px;
-    text-align: center;
-    font-weight: bold;
-    width: 70%;
-    margin: 5px 0;
     transition: 0.25s;
 }
 .service_page{
     color: white;
 }
-.service_page:hover{
-    background-color: rgba(255, 255, 255, 0.125);
-}
 .current_service_page{
-    color: black;
     background-color: white;
+    color: black;
+}
+.service_page:hover{
+    background-color: rgba(255, 255, 255, 0.0625);
 }
 /*---------------------------------------------------------------------------------------------------*/
 
@@ -115,7 +115,7 @@ footer{
 }
 #footer_sitemap a, #footer_sitemap p{
     text-decoration: none;
-    font-size: 30px;
+    font-size: 25px;
     padding: 2px 20px;
     color: white;
     margin-right: 35px;

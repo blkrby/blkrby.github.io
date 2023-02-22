@@ -1,0 +1,234 @@
+/*general*/
+body{
+    background-color: #e2e2e2;
+    margin: 25px;
+}
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+main{
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    padding: 25px;
+    margin-top: 25px;
+    min-height: 75vh;
+}
+/*--------------------------------------------------------------------------------*/
+
+/*nav*/
+nav{
+    background-color: white;
+    height: 70px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav_logo{
+    height: 50px;
+    margin-left: 20px;
+}
+#nav_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_page{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 0 15px;
+}
+#current_page{
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 0 15px;
+}
+#nav_log_in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-decoration: none;
+}
+#nav_log_in img{
+    height: 30px;
+    border-radius: 1000px;
+    margin: 0 0 0 15px;
+}
+#nav_log_in p{
+    font-size: 20px;
+    margin: 0 15px 0 5px;
+    color: black;
+}
+#nav_cart{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px 0 15px;
+    height: 40px;
+}
+#nav_cart img{
+    height: inherit;
+}
+#nav_cart p{
+    height: inherit;
+    margin-top: -62.5%;
+}
+/*--------------------------------------------------------------------------------*/
+
+/*footer*/
+footer{
+    margin-top: 25px;
+    padding: 50px 0;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_section{
+    min-height: 175px;
+    min-width: 12.5%;
+    margin: 0 10px;
+}
+#footer_sitemap{
+    display: flex;
+    flex-direction: column;
+}
+#footer_current_page{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+.footer_page{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 0 15px;
+}
+#footer_info{
+    width: 20%;
+    font-size: 20px;
+}
+#footer_info_adress{
+    margin: 0;
+}
+#footer_info_email{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+#footer_info_email p{
+    margin: 0;
+}
+#footer_info_email a{
+    margin: 0;
+    text-decoration: none;
+    color: black;
+    margin-left: 4px;
+}
+#footer_faq{
+    display: flex;
+    flex-direction: column;
+}
+#footer_faq a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+#footer_faq_socials{
+    margin-top: 10px;
+}
+#footer_faq_socials a{
+    margin: 0 5px;
+}
+#footer_faq_socials img{
+    height: 35px;
+}
+#footer_subscription{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#footer_subscription p{
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+#footer_subscription form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer_subscription form input{
+    width: 97%;
+    height: 30px;
+    border-radius: 0px;
+    border: 1px black solid;
+}
+#footer_subscription form button{
+    width: 100%;
+    border-radius: 0px;
+    height: 30px;
+    border: 0px black solid;
+    margin-top: 2.5px;
+}
+/*--------------------------------------------------------------------------------*/
+
+/*cart*/
+#cart_holder{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: -25px 0 0 -25px;
+    z-index: 101;
+    display: flex;
+    flex-direction: row-reverse;
+    pointer-events: none;
+    transition: 0.75s;
+}
+#cart{
+    height: 100%;
+    width: 375px;
+    background-color: white;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.5);
+    transition: 0.75s;
+    margin-right: -375px;
+}
+#cart_header{
+    height: 15%;
+    background-color: #9c9c9c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#cart_header img{
+    height: 25px;
+    margin-left: 20px;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+#cart_header p{
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    font-size: 30px;
+    margin-right: 40px;
+}
+/*--------------------------------------------------------------------------------*/
+
+/**/
+
+/*--------------------------------------------------------------------------------*/
+
+/**/
+
+/*--------------------------------------------------------------------------------*/

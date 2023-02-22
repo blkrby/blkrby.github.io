@@ -1,0 +1,122 @@
+#content_header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#sorting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#sorting p{
+    font-size: 17.5px;
+    margin: 0;
+}
+#sorting select{
+    margin-left: 5px;
+    border: 0;
+    border-radius: 0px;
+    height: 30px;
+    width: 170px;
+    font-size: 15px;
+}
+#search_bar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+#search_bar input{
+    height: inherit;
+    width: 175px;
+    padding: 0 10px;
+    margin: 0;
+    border: 1px rgb(128, 128, 128) solid;
+    border-radius: 1000px;
+}
+#search_bar img{
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    height: inherit;
+    border: 1px rgb(233, 233, 233) solid;
+    border: 0;
+    margin: 0;
+    background-color: #e2e2e2;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.125);
+    border: 1px solid rgb(209, 209, 209);
+    margin-left: 5px;
+    border-radius: 1000px;
+}
+#products{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 30px;
+    justify-content: center;
+    margin-top: 25px;
+}
+.product{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.125);
+    border: 1px rgb(235, 235, 235) solid;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+.product:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.55);
+}
+.product_banner{
+    width: 300px;
+}
+.product_description{
+    padding: 15px;
+    aspect-ratio: 4/3;
+    width: 270px;
+    background-color: rgb(245, 245, 245);
+}
+.product_description span{
+    font-size: 15px;
+    margin: 0;
+}
+.product_title{
+    font-weight: bold;
+    font-size: 30px;
+    margin: 5px 0 15px;
+}
+.product_price{
+    font-size: 20px;
+}
+#likes_content{
+    display: flex;
+    flex-direction: row;
+}
+.like_counter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.like_counter p{
+    font-size: 25px;
+    margin: 0 5px 0;
+}
+.like_icons_holder{
+    width: 30px;
+    height: 30px;
+    min-width: 25px;
+    overflow: hidden;
+}
+.like_icons{
+    width: 200%;
+    display: flex;
+}
+.like_icons_holder img{
+    aspect-ratio: 1/1;
+    width: 50%;
+}
+
+#sex_list{
+    display: none;
+}
+#type_list{
+    display: none;
+}

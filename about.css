@@ -1,6 +1,7 @@
 /*who_are_we*/
 #who_are_we{
-    padding: 50px 0 125px;
+    width: 100%;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +32,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 0 150px;
+    padding: 100px 0;
 }
 #why_choose_us_content{
     display: flex;
@@ -70,12 +71,12 @@
     align-items: center;
     aspect-ratio: 1/1;
     height: inherit;
-    font-size: 25px;
+    font-size: 30px;
 }
 .value_title{
     color: white;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -91,7 +92,7 @@
     background-color: rgb(10, 10, 10);
 }
 .value_description p{
-    font-size: 25px;
+    font-size: 30px;
     text-align: justify;
     color: white;
     width: 80%;
@@ -104,10 +105,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 0 100px;
+    padding: 100px 0;
 }
 #staff_description{
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     text-align: center;
     width: 60%;
@@ -145,6 +146,8 @@
 .staff_member img{
     aspect-ratio: 1/1;
     width: inherit;
+    border-radius: 1000px;
+    background-color: rgba(0, 0, 0, 0.25);
 }
 .staff_member_name{
     font-size: 20px;
@@ -182,10 +185,10 @@
 }
 .trusted_brand{
     transition: 0.25s;
-    border: 3px solid rgba(255, 255, 255, 0.25);
+    border: 3px solid rgb(10, 10, 10);
 }
 .trusted_brand:hover{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgb(10, 10, 10);
 }
 .trusted_brand img{
     height: 65%;

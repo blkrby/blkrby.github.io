@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="general.css">
+    
+    <link rel="shortcut icon" href="pictures/branding/tab logo.png">
+
+    <script defer src="home.js"></script>
+    <script defer src="general.js"></script>
+
+    <title>Attire - Best online clothing store</title>
+</head>
+<body>
+    <div id="cart_holder">
+        <div id="cart">
+            <div id="cart_header">
+                <img src="pictures/icons/random/close.png" onclick="closeCartTab()" alt="">
+                <p>Cart</p>
+            </div>
+        </div>
+    </div>
+
+    <nav>
+        <a href=""><img id="nav_logo" src="pictures/branding/Attire logo.png" alt=""></a>
+
+        <div id="nav_content">
+            <div id="nav_links">
+                <a id="current_page" href="home.html">Home</a>
+                <a class="nav_page" href="store.html">Store</a>
+                <a class="nav_page"  href="blog.html">Blog</a>
+                <a class="nav_page"  href="about.html">About</a>
+            </div>
+
+            <a href="log_in.html" id="nav_log_in">
+                <img src="pictures/icons/random/no account.png" alt="">
+                <p>Log in</p>
+            </a>
+
+            <div id="nav_cart" onclick="openCartTab()">
+                <img src="pictures/icons/random/shop.png" alt="">
+                <p>0</p>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="welcome_ad">
+            <div id="welcome_ad_picture_holder">
+                <div id="welcome_ad_pictures">
+                    <img src="pictures/home_slider_ad/home_slider_ad1.jpg" alt="">
+                    <img src="pictures/home_slider_ad/home_slider_ad2.jpg" alt="">
+                    <img src="pictures/home_slider_ad/home_slider_ad3.jpg" alt="">
+                    <img src="pictures/home_slider_ad/home_slider_ad4.jpg" alt="">
+                    <img src="pictures/home_slider_ad/home_slider_ad5.jpg" alt="">
+                </div>
+            </div>
+            <div id="welcome_ad_text">
+                <p>New year collection out</p>
+                <a href="">Shop now</a>
+            </div>
+        </section>
+
+        <section id="categories">
+            <p class="section_title">Categories</p>
+
+            <div id="categories_content">
+                <a href="" class="category">
+                    <div class="category_content">
+                        <img src="pictures/categories/tops.jpg" alt="">
+                        <div class="category_text">
+                            <p>Tops</p>
+                        </div>                        
+                    </div>
+                </a>
+                <a href="" class="category">
+                    <div class="category_content">
+                        <img src="pictures/categories/bottoms.jpg" alt="">
+                        <div class="category_text">
+                            <p>Bottoms</p>
+                        </div>                        
+                    </div>
+                </a>
+                <a href="" class="category">
+                    <div class="category_content">
+                        <img src="pictures/categories/shoes.jpg" alt="">
+                        <div class="category_text">
+                            <p>Shoes</p>
+                        </div>                        
+                    </div>
+                </a>
+                <a href="" class="category">
+                    <div class="category_content">
+                        <img src="pictures/categories/accessories.jpg" alt="">
+                        <div class="category_text">
+                            <p>Accessories</p>
+                        </div>                        
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section id="popular_products">
+            <p class="section_title">Popular products</p>
+
+            <div id="popular_product_slider">
+                <img class="popular_product_slider_nav" onclick="previousPopularProduct()" src="pictures/icons/nav/previous.png" alt="">
+                <div id="popular_products_holder">
+                    <div class="popular_products" id="popular_products_thing">
+                        <a href="items/blank_item/blank_item.html" class="popular_product">
+                            <img src="pictures/products/product dummy 1.jpg" alt="">
+                            <div class="popular_product_text">
+                                <span>New year collection</span>
+                                <p class="popular_product_title">Product title</p>
+                                <p class="popular_product_price">$XXX</p>
+                            </div>
+                        </a>
+                        <a href="items/blank_item/blank_item.html" class="popular_product">
+                            <img src="pictures/products/product dummy 2.jpg" alt="">
+                            <div class="popular_product_text">
+                                <span>New year collection</span>
+                                <p class="popular_product_title">Product title</p>
+                                <p class="popular_product_price">$XXX</p>
+                            </div>
+                        </a>
+                        <a href="items/blank_item/blank_item.html" class="popular_product">
+                            <img src="pictures/products/product dummy 3.jpg" alt="">
+                            <div class="popular_product_text">
+                                <span>New year collection</span>
+                                <p class="popular_product_title">Product title</p>
+                                <p class="popular_product_price">$XXX</p>
+                            </div>
+                        </a>
+                        <a href="items/blank_item/blank_item.html" class="popular_product">
+                            <img src="pictures/products/product dummy 1.jpg" alt="">
+                            <div class="popular_product_text">
+                                <span>New year collection</span>
+                                <p class="popular_product_title">Product title</p>
+                                <p class="popular_product_price">$XXX</p>
+                            </div>
+                        </a>
+                        <a href="items/blank_item/blank_item.html" class="popular_product">
+                            <img src="pictures/products/product dummy 2.jpg" alt="">
+                            <div class="popular_product_text">
+                                <span>New year collection</span>
+                                <p class="popular_product_title">Product title</p>
+                                <p class="popular_product_price">$XXX</p>
+                            </div>
+                        </a>
+                        <a href="items/blank_item/blank_item.html" class="popular_product">
+                            <img src="pictures/products/product dummy 3.jpg" alt="">
+                            <div class="popular_product_text">
+                                <span>New year collection</span>
+                                <p class="popular_product_title">Product title</p>
+                                <p class="popular_product_price">$XXX</p>
+                            </div>
+                        </a>
+                        <a href="items/blank_item/blank_item.html" class="popular_product">
+                            <img src="pictures/products/product dummy 1.jpg" alt="">
+                            <div class="popular_product_text">
+                                <span>New year collection</span>
+                                <p class="popular_product_title">Product title</p>
+                                <p class="popular_product_price">$XXX</p>
+                            </div>
+                        </a>
+                        <a href="items/blank_item/blank_item.html" class="popular_product">
+                            <img src="pictures/products/product dummy 2.jpg" alt="">
+                            <div class="popular_product_text">
+                                <span>New year collection</span>
+                                <p class="popular_product_title">Product title</p>
+                                <p class="popular_product_price">$XXX</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <img class="popular_product_slider_nav" onclick="nextPopularProduct()" src="pictures/icons/nav/next.png" alt="">
+            </div>
+        </section>
+
+        <section id="arguments">
+            <div class="argument">
+                <img src="pictures/icons/arguments/shipping.png" alt="">
+                <p>World wide shipping</p>
+            </div>
+            <div class="argument">
+                <img src="pictures/icons/arguments/security.png" alt="">
+                <p>Secure payments</p>
+            </div>
+            <div class="argument">
+                <img src="pictures/icons/arguments/quality.png" alt="">
+                <p>Good quality</p>
+            </div>
+            <div class="argument">
+                <img src="pictures/icons/arguments/money.png" alt="">
+                <p>Affordable prices</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer_section" id="footer_sitemap">
+            <a id="footer_current_page" href="home.html">Home</a>
+            <a class="footer_page" href="store.html">Store</a>
+            <a class="footer_page" href="blog.html">Blog</a>
+            <a class="footer_page" href="about.html">About</a>
+        </div>
+
+        <div class="footer_section" id="footer_info">
+            <p id="footer_info_adress">
+                123 fake name street, fake name city.
+            </p>
+
+            <div id="footer_info_email">
+                <p>Email : </p>
+                <a href="">info@attire.com</a>
+            </div>
+
+            <p id="footer_info_phone">
+                <p>Telephone : 1-800-XXX-XXX</p>
+            </p>
+        </div>
+
+        <div class="footer_section" id="footer_faq">
+            <a href="">Shipping & returns</a>
+            <a href="">Q&A</a>
+
+            <div id="footer_faq_socials">
+                <a href=""><img src="pictures/icons/socials/facebook.png" alt=""></a>
+                <a href=""><img src="pictures/icons/socials/instagram.png" alt=""></a>
+                <a href=""><img src="pictures/icons/socials/twitter.png" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer_section" id="footer_subscription">
+            <p>Recieve emails about the latest drops</p>
+
+            <form action="">
+                <input type="email" name="" id="">
+                <button type="submit">Subscribe now</button>
+            </form>
+        </div>
+    </footer>
+</body>
+</html>
