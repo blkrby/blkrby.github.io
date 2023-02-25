@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="general.css">
 
@@ -12,324 +12,172 @@
     <script defer src="general.js"></script>
 
     <link rel="shortcut icon" href="pictures/branding/nav_icon.png" type="image/x-icon">
-    <title>Home - Black Ruby Agency</title>
+    <title>Home - Black Ruby</title>
 </head>
 <body>
-    <nav>
-        <img id="nav_logo" src="pictures/branding/black_ruby_logo_circled_white.png" alt="">
-        <ul id="nav_links">
-            <li><a class="current_nav_page" href="home.html">Home</a></li>
-            <li><p class="nav_page" id="services_nav_link" href="services.html">Services</p></li>
-            <li><a class="nav_page" href="about.html">About us</a></li>
-        </ul>
+    <nav id="nav" class="unscrolled_nav">
+        <img src="pictures/branding/black_ruby_logo_circled_white.png" alt="">
+        <div id="nav_links">
+            <a href="home.html" class="current_nav_page">Home</a>
+            <a href="services.html" class="nav_page">Services</a>
+            <a href="about.html" class="nav_page">About us</a>
+        </div>
     </nav>
-    <div id="services_menu">
-        <a href="service-web_development.html" class="service_page">Web development</a>
-        <a href="service-digital_marketing.html" class="service_page">Digital marketing</a>
-        <a href="service-graphic_design.html" class="service_page">Graphic design</a>
-    </div>
 
     <main>
-        <section id="who_are_we">
-            <img id="who_are_we_illustration" src="pictures/branding/3d_gem.png" alt="">
-            <div id="who_are_we_text">
-                <img src="pictures/branding/black_ruby_logo_with_text white.png" alt="">
-                <p>Black Ruby is an online-based agency that helps businesses establish and manage their brand online by offering the necessary services.</p>
-                <a href="about.html">Learn more</a>
+        <section id="banner">
+            <img src="pictures/branding/black_ruby_logo_with_text white.png" alt="">
+            <p>Your branding hub</p>
+        </section>
+
+        <section id="presentation">
+            <div id="presentation_text">
+                <p>The Black Ruby agency is the hub for the managment of your business" online brand of your, offering all the services you need under one roof.</p>
+                <a href="about.html">See more</a>
+            </div>
+            <img src="pictures/page_pictures/home/about.jpg" alt="">
+        </section>
+
+        <section id="mission">
+            <img src="pictures/page_pictures/home/mission.jpg" alt="">
+            <div id="mission_text">
+                <h3>Our mission</h3>
+                <p>Our mission is to make managing business online brands easier for our customers by offering the services necessary for brand management online.</p>
             </div>
         </section>
 
         <section id="services">
-            <div class="service" id="service1">
-                <div class="service_content">
-                    <p class="service_number">01</p>
-                    <p class="service_title">Web development</p>
-                    <p class="service_description">
-                        Description of the service Description of the service Description of the service Description of the service.
-                    </p>
-                    <a href="service-web_development.html">More</a>
-                </div>
+            <div id="services_text">
+                <h3>Our services</h3>
+                <p>We offer multiple services in different domains with the aim of taking the weight of managing a business' online brand off of our customer's shoulders.</p>
+                <a href="services.html">See more</a>
             </div>
-            <hr class="services_hr">
-            <div class="service" id="service2">
-                <div class="service_content">
-                    <p class="service_number">02</p>
-                    <p class="service_title">Digital marketing</p>
-                    <p class="service_description">
-                        Description of the service Description of the service Description of the service Description of the service.
-                    </p>
-                    <a href="service-digital_marketing.html">More</a>
-                </div>
-            </div>
-            <hr class="services_hr">
-            <div class="service" id="service3">
-                <div class="service_content">
-                    <p class="service_number">03</p>
-                    <p class="service_title">Graphic design</p>
-                    <p class="service_description">
-                        Description of the service Description of the service Description of the service Description of the service.
-                    </p>
-                    <a href="service-graphic_design.html">More</a>
-                </div>
-            </div>
+            <img src="pictures/page_pictures/home/services.jpg" alt="">
         </section>
 
-        <section id="projects">
-            <h3>See our work</h3>
+        <section id="strategy">
+            <h3>Our strategy</h3>
 
-            <div id="project_category_selector">
-                <div id="project_category_selector_top">
-                    <p onclick="selectProjectCategory1()">Web development</p>
-                    <p onclick="selectProjectCategory2()">Digital marketing</p>
-                    <p onclick="selectProjectCategory3()">Graphic design</p>
-                </div>
-                <div id="project_category_selector_bottom">
-                    <div id="project_category_pointer"></div>
-                </div>
-            </div>
-
-            <div id="project_categories_holder">
-                <div id="project_categories">
-                    <div class="project_category">
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/foody/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Foody</p>
-                                <p class="project_description">A restaurant website</p>
-                            </div>
-                        </a>
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/attire/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Attire</p>
-                                <p class="project_description">A clothing ecommerce website</p>
-                            </div>
-                        </a>
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/attire/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Attire</p>
-                                <p class="project_description">A clothing ecommerce website</p>
-                            </div>
-                        </a>
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/foody/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Foody</p>
-                                <p class="project_description">A restaurant website</p>
-                            </div>
-                        </a>
+            <div id="strategy_points">
+                <div class="strategy_point sp_left">
+                    <img src="pictures/page_pictures/home/strategy/discover.png" alt="">
+                    <div class="strategy_point_text">
+                        <h4>Research</h4>
+                        <p>
+                            We start by understanding your needs and requirements through comminication on meetings and other forms.
+                        </p>
                     </div>
-                    <div class="project_category">
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/foody/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Foody</p>
-                                <p class="project_description">A restaurant website</p>
-                            </div>
-                        </a>
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/attire/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Attire</p>
-                                <p class="project_description">A clothing ecommerce website</p>
-                            </div>
-                        </a>
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/attire/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Attire</p>
-                                <p class="project_description">A clothing ecommerce website</p>
-                            </div>
-                        </a>
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/foody/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Foody</p>
-                                <p class="project_description">A restaurant website</p>
-                            </div>
-                        </a>
+                </div>
+                <div class="strategy_point sp_right">
+                    <img src="pictures/page_pictures/home/strategy/plan.png" alt="">
+                    <div class="strategy_point_text">
+                        <h4>Plan</h4>
+                        <p>
+                            After getting the scope of the project, we establish, with you, a plan to achieve the desired product.
+                        </p>
                     </div>
-                    <div class="project_category">
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/foody/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Foody</p>
-                                <p class="project_description">A restaurant website</p>
-                            </div>
-                        </a>
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/attire/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Attire</p>
-                                <p class="project_description">A clothing ecommerce website</p>
-                            </div>
-                        </a>
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/attire/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Attire</p>
-                                <p class="project_description">A clothing ecommerce website</p>
-                            </div>
-                        </a>
-                        <a href="" class="project">
-                            <img src="portfolio/web_development/foody/project_banner.png" alt="">
-                            <div class="project_text">
-                                <p class="project_title">Foody</p>
-                                <p class="project_description">A restaurant website</p>
-                            </div>
-                        </a>
+                </div>
+                <div class="strategy_point sp_left">
+                    <img src="pictures/page_pictures/home/strategy/work.png" alt="">
+                    <div class="strategy_point_text">
+                        <h4>Work</h4>
+                        <p>
+                            We follow the previously established plan, giving the customer regular updates on the project.
+                        </p>
+                    </div>
+                </div>
+                <div class="strategy_point sp_right">
+                    <img src="pictures/page_pictures/home/strategy/deliver.png" alt="">
+                    <div class="strategy_point_text">
+                        <h4>Deliver</h4>
+                        <p>
+                            We present the final work to the customer and after approbation follow the predetermined steps for handing over.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="why_choose_us">
-            <h3>Why choose us ?</h3>
+        <section id="appreciation">
+            <h3>Customer appreciation</h3>
             
-            <div id="values">
-                <h4>Our values</h4>
-                <div id="values_holder">
-                    <div class="value">
-                        <img src="pictures/values/quality.png" alt="">
-                        <p>Quality</p>
+            <div id="comments_holder">
+                <div id="comments">
+                    <div class="comment">
+                        <p class="comment_content">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis hic nam voluptatem quos dolore, tempore eius. Illum alias architecto quas, enim voluptas placeat veritatis dolore, doloribus expedita minus commodi explicabo.
+                        </p>
+                        <p class="comment_author">Mr X, CEO of Y</p>
                     </div>
-                    <div class="value">
-                        <img src="pictures/values/punctuality.png" alt="">
-                        <p>Punctuality</p>
+                    <div class="comment">
+                        <p class="comment_content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique quasi incidunt quibusdam ab error fuga, laborum voluptatum cum! Dolor obcaecati consectetur nesciunt unde dolore numquam enim quam mollitia magnam velit.
+                        </p>
+                        <p class="comment_author">Mr X, CEO of Y</p>
                     </div>
-                    <div class="value">
-                        <img src="pictures/values/respect.png" alt="">
-                        <p>Respect</p>
-                    </div>
-                </div>
-            </div>
-
-            <div id="performances">
-                <h4>Our performances</h4>
-
-                <div id="comments_holder">
-                    <div id="comments">
-                        <div class="comment">
-                            <p class="comment_content">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis aliquam eius fuga animi provident corrupti accusantium, ad aut, velit reprehenderit ipsum dicta commodi suscipit nisi impedit deserunt totam perferendis voluptates.
-                            </p>
-                            <div class="comment_info">
-                                <img src="pictures/trusting_brands/amazon.png" alt="">
-                                <p class="comment_author">Mr X, Y of Z</p>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p class="comment_content">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis quas ut ducimus dicta delectus commodi officia eaque tempora reiciendis, modi nihil repudiandae praesentium, saepe molestiae, quos voluptatem. Ea, consequatur quibusdam.
-                            </p>
-                            <div class="comment_info">
-                                <img src="pictures/trusting_brands/google.png" alt="">
-                                <p class="comment_author">Mr X, Y of Z</p>
-                            </div>
-                        </div>
-                        <div class="comment">
-                            <p class="comment_content">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore aperiam minima laborum blanditiis quos! Officia explicabo corporis perspiciatis odio sit ex et laboriosam, fugiat incidunt eum voluptas quibusdam doloribus. Vitae!
-                            </p>
-                            <div class="comment_info">
-                                <img src="pictures/trusting_brands/hp.png" alt="">
-                                <p class="comment_author">Mr X, Y of Z</p>
-                            </div>
-                        </div>
+                    <div class="comment">
+                        <p class="comment_content">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt veniam tempora exercitationem aspernatur ab, officiis maiores commodi nihil! Quisquam accusamus rem placeat minus voluptates facere inventore nam deleniti commodi obcaecati.
+                        </p>
+                        <p class="comment_author">Mr X, CEO of Y</p>
                     </div>
                 </div>
-            </div>
-        </section>
+                <div id="comments_nav">
 
-        <section id="staff">
-            <h3>Meet the staff</h3>
-            <div id="staff_members">
-                <a href="" class="staff_member">
-                    <img src="" alt="">
-                    <p class="staff_member_name">Govain Carlhensky R.</p>
-                    <p class="staff_member_position">Code manager</p>
-                </a>
-                <a href="" class="staff_member">
-                    <img src="" alt="">
-                    <p class="staff_member_name">Govain Carlhensky R.</p>
-                    <p class="staff_member_position">Code manager</p>
-                </a>
-                <a href="" class="staff_member">
-                    <img src="" alt="">
-                    <p class="staff_member_name">Govain Carlhensky R.</p>
-                    <p class="staff_member_position">Code manager</p>
-                </a>
-                <a href="" class="staff_member">
-                    <img src="" alt="">
-                    <p class="staff_member_name">Govain Carlhensky R.</p>
-                    <p class="staff_member_position">Code manager</p>
-                </a>
-                <a href="about.html #staff" id="staff_more">
-                    <p>See <br> more</p>
-                </a>
+                </div>
             </div>
         </section>
 
         <section id="trusted_by">
             <h3>Trusted by</h3>
 
-            <div id="trusted_brands">
-                <div class="trusted_brand_holder">
-                    <a href="https://www.amazon.com/" target="_blank">
-                        <div class="trusted_brand">
-                            <img src="pictures/trusting_brands/amazon.png" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="trusted_brand_holder">
-                    <a href="https://www.google.com/" target="_blank">
-                        <div class="trusted_brand">
-                            <img src="pictures/trusting_brands/google.png" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="trusted_brand_holder">
-                    <a href="https://www.hp.com/" target="_blank">
-                        <div class="trusted_brand">
-                            <img src="pictures/trusting_brands/hp.png" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="trusted_brand_holder">
-                    <a href="https://www.meta.com/" target="_blank">
-                        <div class="trusted_brand">
-                            <img src="pictures/trusting_brands/meta.png" alt="">
-                        </div>
-                    </a>
-                </div>
-                <div class="trusted_brand_holder">
-                    <a href="" target="_blank">
-                        <div class="trusted_brand">
-                            <img src="pictures/trusting_brands/google.png" alt="">
-                        </div>
-                    </a>
-                </div>
+            <div id="trusting_brands">
+                <a href="" target="_blank" class="trusting_brand_holder">
+                    <div class="trusting_brand">
+                        <img src="pictures/trusting_brands/amazon.png" alt="">
+                    </div>
+                </a>
+                <a href="" target="_blank" class="trusting_brand_holder">
+                    <div class="trusting_brand">
+                        <img src="pictures/trusting_brands/google.png" alt="">
+                    </div>
+                </a>
+                <a href="" target="_blank" class="trusting_brand_holder">
+                    <div class="trusting_brand">
+                        <img src="pictures/trusting_brands/hp.png" alt="">
+                    </div>
+                </a>
+                <a href="" target="_blank" class="trusting_brand_holder">
+                    <div class="trusting_brand">
+                        <img src="pictures/trusting_brands/meta.png" alt="">
+                    </div>
+                </a>
+                <a href="" target="_blank" class="trusting_brand_holder">
+                    <div class="trusting_brand">
+                        <img src="pictures/trusting_brands/google.png" alt="">
+                    </div>
+                </a>
+                <a href="" target="_blank" class="trusting_brand_holder">
+                    <div class="trusting_brand">
+                        <img src="pictures/trusting_brands/hp.png" alt="">
+                    </div>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <a href=""><img id="footer_logo" src="pictures/branding/black_ruby_logo_with_text white.png" alt=""></a>
+        <img src="pictures/branding/black_ruby_logo_with_text white.png" alt="" id="footer_logo">
         <div id="footer_sitemap">
-            <a class="current_footer_page" href="home.html">Home</a>
-            <p class="footer_page">Services</p>
-            <a class="footer_page" href="about.html">About us</a>
+            <a href="home.html" class="current_nav_page">Home</a>
+            <a href="services.html" class="nav_page">Services</a>
+            <a href="about.html" class="nav_page">About us</a>
         </div>
-        <hr id="footer_hr">
+        <hr>
         <div id="footer_bottom">
             <p id="footer_copy">&copy; Black Ruby Agency. All rights reserved</p>
             <div id="footer_bottom_links">
-                <a href="">Contact us</a>
-                <hr>
                 <a href="">Privacy policy</a>
-                <hr>
-                <a href="">Terms of service</a>
             </div>
         </div>
     </footer>

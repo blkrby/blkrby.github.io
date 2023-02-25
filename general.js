@@ -1,24 +1,18 @@
-/*services nav menu variables start*/
-let servicesMenuOn = false;
-const servicesNavLink = document.getElementById("services_nav_link");
-const servicesMenu = document.getElementById("services_menu");
-/*---------- services nav menu variables end ----------*/
+/*nav variables start*/
+const nav = document.getElementById("nav");
+/*---------- nav variables end ----------*/
 
-/*services nav menu code start*/
-function turnServicesMenuOn(){
-    servicesMenuOn = true;
-    servicesMenu.style.height = "300px";
-}
-function turnServicesMenuOff(){
-    if(servicesMenuOn){
-        servicesMenuOn = false;
-        servicesMenu.style.height = "0px";
+/*nav code start*/
+function toggleNav(){
+    let windowScroll = window.scrollY;
+    if(windowScroll >= 100){
+        nav.classList.add("scrolled_nav");
+        nav.classList.remove("unscrolled_nav");
+    }
+    else{
+        nav.classList.add("unscrolled_nav");
+        nav.classList.remove("scrolled_nav");
     }
 }
-
-servicesNavLink.addEventListener('pointerenter', turnServicesMenuOn);
-
-servicesMenu.addEventListener('pointerleave', turnServicesMenuOff);
-window.addEventListener('click', turnServicesMenuOff);
-window.addEventListener('scroll', turnServicesMenuOff);
-/*---------- services nav menu code end ----------*/
+window.addEventListener('scroll', toggleNav);
+/*---------- nav code end ----------*/

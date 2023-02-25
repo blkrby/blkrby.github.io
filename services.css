@@ -1,195 +1,45 @@
-#method, #feedback, #portfolio{
-    padding: 75px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/*presentation*/
-#presentation{
+.service{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
 }
-#presentation_text{
+.service h3{
+    margin: 0;
+}
+.reversed{
+    flex-direction: row-reverse;
+}
+.service img{
+    aspect-ratio: 1/1;
+    width: 35%;
+}
+.service_text{
     width: 45%;
-    padding: 0 5% 0 10%;
-}
-#presentation img{
-    width: 40%;
-}
-h1{
-    color: white;
-    font-size: 60px;
-    margin: 0 0 25px;
-    text-shadow: 0 0 10px black;
-}
-#service_description{
-    margin: 0;
-    text-align: justify;
-    color: white;
-    font-size: 30px;
-}
-/*---------------------------------------------------------------------------------------------------*/
-
-/*method*/
-#method_description{
-    font-size: 30px;
-    color: white;
-    width: 800px;
-    text-align: justify;
-    margin: 0;
-}
-#methods{
-    margin-top: 30px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 390px);
-    grid-gap: 10px;
-    justify-content: center;
-    width: 800px;
-}
-
-.method{
-    height: 390px;
-    width: 390px;
-    background-color: rgb(10, 10, 10);
-}
-.method_header{
-    display: flex;
-    height: 20%;
-}
-.method_number{
-    aspect-ratio: 1/1;
-    height: 100%;
-    background-color: rgb(0, 0, 20);
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    color: white;
-    font-size: 35px;
-}
-.method_title{
-    width: 80%;
-    height: 100%;
-    margin: 0;
-    background-color: black;
-    color: white;
-    font-size: 35px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.method_description{
-    height: 80%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.method_description p{
-    width: 80%;
-    height: 80%;
-    text-align: justify;
-    font-size: 25px;
-    color: white;
-}
-/*---------------------------------------------------------------------------------------------------*/
-
-/*feedback*/
-#comments_holder{
-    width: 750px;
-    aspect-ratio: 7/4;
-    background-color: rgb(10, 10, 10);
-    overflow: hidden;
-}
-#comments{
-    width: 400%;
-    height: 100%;
-    display: flex;
-    transition: 1s;
-}
-.comment{
-    width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
-.comment_content{
+.normal .service_text{
+    margin: 0 15% 0 5%;
+    align-items: flex-start;
+}
+.reversed .service_text{
+    margin: 0 5% 0 15%;
+    align-items: flex-end;
+}
+.service_text p{
+    font-size: 35px;
     color: white;
-    font-size: 30px;
     text-align: justify;
-    width: 80%;
-    margin: 0;
 }
-.comment_info{
-    margin-top: 10px;
-    width: 80%;
-    height: 15%;
-    display: flex;
-    align-items: center;
-}
-.comment_info img{
-    height: 100%;
-    aspect-ratio: 1/1;
-}
-.comment_info p{
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-    margin: 0 0 0 15px;
-}
-/*---------------------------------------------------------------------------------------------------*/
-
-#projects{
-    width: 965px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 475px);
-    grid-gap: 15px;
-    justify-content: center;
-}
-.project{
-    width: 100%;
-    aspect-ratio: 3/2;
-    background-color: rgb(10, 10, 10);
-    display: flex;
-    flex-direction: column;
+.service_text a{
     text-decoration: none;
-}
-.project img{
-    width: 100%;
-    aspect-ratio: inherit;
-}
-.project_text{
-    margin-top: -66.5%;
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(1.5px);
-    width: 100%;
-    aspect-ratio: inherit;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
+    color: white;
+    background-color: red;
+    font-size: 35px;
+    padding: 5px 25px;
     transition: 0.25s;
 }
-.project_text:hover{
-    opacity: 1;
-}
-.project_text p{
-    width: 80%;
-    text-align: center;
-    color: white;
-    margin: 0;
-    text-shadow: 0 0 10px black;
-}
-.project_title{
-    font-size: 30px;
-    font-weight: bold;
-}
-.project_description{
-    font-size: 25px;
+.service_text a:hover{
+    background-color: black;
 }
