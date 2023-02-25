@@ -43,3 +43,34 @@
 .service_text a:hover{
     background-color: black;
 }
+
+/*for bigger tablets*/
+@media(max-width:1079px){
+    .service{
+        height: auto;
+        padding: 75px 0;
+    }
+    .service img{
+        width: 45%;
+    }
+    .service_text{
+        width: 45%;
+    }
+    .normal .service_text{
+        margin: 0 7.5% 0 2.5%;
+    }
+    .reversed .service_text{
+        margin: 0 2.5% 0 7.5%;
+    }
+}
+
+/*for big tablets*/
+@media(max-width:850px){
+    .service_text p{
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    .service_text a{
+        font-size: 30px;
+    }
+}

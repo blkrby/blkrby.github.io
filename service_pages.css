@@ -87,3 +87,37 @@
     width: 80%;
 }
 /*----------------------------------------------------------------------------------------------*/
+/*for bigger tablets*/
+@media(max-width:1079px){
+    /*portfolio*/
+    #projects{
+        width: 85%;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+}
+
+/*for big tablets*/
+@media(max-width:850px){
+    /*description*/
+    #description img{
+        width: 40%;
+    }
+    #description_text{
+        margin: 0 5%;
+        width: 50%;
+    }
+    #description_text p{
+        font-size: 30px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+    /*portfolio*/
+    #projects{
+        grid-template-columns: repeat(auto-fill, 375px);
+        grid-gap: 20px;
+        width: 95%;
+    }
+    .project{
+        width: 375px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+}

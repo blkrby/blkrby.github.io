@@ -212,3 +212,128 @@
     margin: 0;
 }
 /*----------------------------------------------------------------------------------------------*/
+
+/*for bigger tablets*/
+@media(max-width:1079px){
+    /*presentation*/
+    #presentation img{
+        width: 50%;
+    }
+    #presentation_text{
+        width: 35%;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
+    /*mission*/
+    #mission img{
+        width: 50%;
+    }
+    #mission_text{
+        width: 35%;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+    
+    /*services*/
+    #services img{
+        width: 50%;
+    }
+    #services_text{
+        width: 35%;
+    }
+    /*----------------------------------------------------------------------------------------------*/    
+
+    /*strategy*/
+    .sp_left{
+        margin-right: 0;
+    }
+    .sp_right{
+        margin-left: 0;
+        flex-direction: row-reverse;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
+    /*appreciation*/
+    #comments_holder{
+        width: 80%;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+}
+
+/*for big tablets*/
+@media(max-width:850px){
+    /*presentation*/
+    #presentation img{
+        width: 40%;
+    }
+    #presentation_text{
+        width: 50%;
+        padding: 0 5%;
+    }
+    #presentation_text p{
+        font-size: 25px;
+        margin: 10px 0;
+    }
+    #presentation_text a{
+        padding: 3px 20px;
+        font-size: 25px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
+    /*mission*/
+    #mission img{
+        width: 40%;
+    }
+    #mission_text{
+        width: 50%;
+        padding: 0 5%;
+    }
+    #mission_text h3{
+        margin: 0 0 5px;
+    }
+    #mission_text p{
+        font-size: 25px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+    
+    /*services*/
+    #services img{
+        width: 40%;
+    }
+    #services_text{
+        width: 50%;
+        padding: 0 5%;
+    }
+    #services_text h3{
+        margin: 0 0 5px;
+    }
+    #services_text p{
+        font-size: 25px;
+    }
+    #services_text a{
+        padding: 3px 20px;
+        font-size: 25px;
+    }
+    /*----------------------------------------------------------------------------------------------*/    
+
+    /*strategy*/
+    .strategy_point img{
+        height: 150px;
+    }
+    .strategy_point_text{
+        width: 425px;
+        height: 150px;
+    }
+    .strategy_point_text p{
+        font-size: 25px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
+    /*appreciation*/
+    #comments_holder{
+        width: 80%;
+    }
+    .comment p{
+        font-size: 30px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+}

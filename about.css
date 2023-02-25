@@ -111,3 +111,33 @@
     margin: 0;
 }
 /*----------------------------------------------------------------------------------------------*/
+
+/*for big tablets*/
+@media(max-width:850px){
+    /*who are we*/
+    #who_are_we{
+        padding: 200px 0 100px;
+    }
+    #who_are_we img{
+        height: 300px;
+    }
+    #who_are_we_text p{
+        width: 500px;
+        font-size: 30px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
+    /*staff*/
+    #staff_description{
+        font-size: 30px;
+        width: 700px;
+    }
+    .staff_member{
+        width: 200px;
+    }
+    .staff_member p{
+        font-size: 25px;
+        text-align: center;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+}
