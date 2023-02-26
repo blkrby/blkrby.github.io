@@ -8,7 +8,7 @@
 }
 body{
     margin: 0;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(25, 25, 25);
 }
 main{
     min-height: 100vh;
@@ -43,7 +43,7 @@ nav{
     z-index: 100;
 }
 .scrolled_nav{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(25, 25, 25);
     box-shadow: 0 0 10px black;    
 }
 .unscrolled_nav img{
@@ -226,7 +226,7 @@ footer hr{
         transition: 0.5s;
     }
     .scrolled_mobile_nav{
-        background-color: rgb(20, 20, 20);
+        background-color: rgb(25, 25, 25);
         box-shadow: 0 0 10px black;
     }
     .unscrolled_mobile_nav{
@@ -271,8 +271,8 @@ footer hr{
         height: 55px;
     }
     .mobile_nav_page, .current_mobile_nav_page{
-        font-size: 40px;
-        width: 50%;
+        font-size: 35px;
+        width: 45%;
         margin: 10px 0;
         padding: 0px;
         text-align: center;
@@ -292,7 +292,7 @@ footer hr{
 
     /*footer*/
     footer{
-        padding: 40px;
+        padding: 35px 25px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -311,7 +311,7 @@ footer hr{
         justify-content: center;
     }
     .nav_page, .current_nav_page{
-        font-size: 21px;
+        font-size: 25px;
     }
     /*----------------------------------------------------------------------------------------------*/
 
