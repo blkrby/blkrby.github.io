@@ -300,6 +300,7 @@ footer hr{
     }
     #footer_logo{
         width: 100%;
+        height: auto;
     }
     footer hr{
         width: 100%;
@@ -340,8 +341,25 @@ footer hr{
     /*----------------------------------------------------------------------------------------------*/
 }
 
-/*for phones*/
+/*for small phones*/
 @media(max-width:380px){
+    /*nav*/
+    #mobile_nav{
+        height: 55px;
+        padding: 5px 1.5%;
+    }
+    #mobile_nav a{
+        height: 90%;
+    }
+    #mobile_nav_btn{
+        height: 40px;
+    }
+    
+    #mobile_nav_menu_btn{
+        height: 40px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
     /*footer*/
     .nav_page, .current_nav_page{
         font-size: 20px;
@@ -349,5 +367,4 @@ footer hr{
         padding: 0 12.5px;
     }
     /*----------------------------------------------------------------------------------------------*/
-
 }
