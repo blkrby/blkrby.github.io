@@ -74,3 +74,10 @@
         font-size: 30px;
     }
 }
+
+/*for small tablets*/
+@media(max-width:800px){
+    .service_text p{
+        font-size: 30px;
+    }    
+}
