@@ -19,6 +19,10 @@
 }
 /*----------------------------------------------------------------------------------------------*/
 
+.square_pic{
+    display: none;
+}
+
 /*presentation*/
 #presentation{
     display: flex;
@@ -338,8 +342,9 @@
     /*----------------------------------------------------------------------------------------------*/
 }
 
-/*for small tablets*/
+/*for normal tablets*/
 @media(max-width:800px){
+
     /*presentation*/
     #presentation img{
         width: 45%;
@@ -371,7 +376,223 @@
     /*----------------------------------------------------------------------------------------------*/    
 }
 
+/*for small tablets*/
+@media(max-width:650px){
+    .regular_pic{
+        display: none;
+    }
+    .square_pic{
+        display: block;
+    }
+
+    /*banner*/
+    #banner img{
+        width: 80%;
+        height: auto;
+    }
+    #banner p{
+        text-align: center;
+        font-size: 60px;
+        max-width: 90%;
+    }
+    /*----------------------------------------------------------------------------------------------*/  
+
+    /*strategy*/
+    .strategy_point{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0 50px;
+    }
+    .strategy_point img{
+        aspect-ratio: 1/1;
+        height: 150px;
+        margin-bottom: 10px;
+    }
+    .strategy_point_text{
+        height: auto;
+        align-items: center;
+    }
+    .sp_left .strategy_point_text{
+        margin-left: 0px;
+        align-items: center;
+    }
+    .sp_right .strategy_point_text{
+        margin-right: 0px;   
+        align-items: center;
+    }
+    .sp_left{
+        margin-right: 0px;
+    }
+    .sp_right{
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
+    /*appreciation*/
+    #comments_holder{
+        width: 90%;
+    }
+    .comment p{
+        font-size: 25px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+}
+
 /*for phones*/
 @media(max-width:450px){
-    
+    /*presentation*/
+    #presentation{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 75px 0;
+        aspect-ratio: 1/1;
+    }
+    #presentation .square_pic{
+        display: block;
+        width: 100%;
+        aspect-ratio: inherit;
+    }
+    #presentation_text{
+        width: 100%;
+        aspect-ratio: inherit;
+        padding: 0;
+        position: absolute;
+        backdrop-filter: blur(3px);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #presentation_text p{
+        font-size: 25px;
+        width: 85%;
+        text-shadow: 0 0 10px black;
+    }
+    #presentation_text a{
+        font-size: 25px;
+    }
+    /*----------------------------------------------------------------------------------------------*/    
+
+    /*mission*/
+    #mission{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 75px 0;
+        aspect-ratio: 1/1;
+    }
+    #mission .square_pic{
+        display: block;
+        width: 100%;
+        aspect-ratio: inherit;
+    }
+    #mission_text{
+        width: 100%;
+        aspect-ratio: inherit;
+        padding: 0;
+        position: absolute;
+        backdrop-filter: blur(3px);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #mission_text p{
+        font-size: 25px;
+        width: 85%;
+        text-shadow: 0 0 10px black;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
+    /*services*/
+    #services{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 75px 0;
+        aspect-ratio: 1/1;
+    }
+    #services .square_pic{
+        display: block;
+        width: 100%;
+        aspect-ratio: inherit;
+    }
+    #services_text{
+        width: 100%;
+        aspect-ratio: inherit;
+        padding: 0;
+        position: absolute;
+        backdrop-filter: blur(3px);
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    #services_text p{
+        font-size: 25px;
+        width: 85%;
+        text-shadow: 0 0 10px black;
+    }
+    #services_text a{
+        font-size: 25px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
+    /*strategy*/
+    #strategy_points{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .strategy_point{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .strategy_point img{
+        aspect-ratio: 1/1;
+        height: 100px;
+        margin-bottom: 30px;
+    }
+    .strategy_point_text{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .sp_left .strategy_point_text{
+        margin-left: 0px;
+        align-items: center;
+    }
+    .sp_right .strategy_point_text{
+        margin-right: 0px;   
+        align-items: center; 
+    }
+    .strategy_point_text p{
+        font-size: 25px;
+    }
+    .sp_left{
+        margin-right: 0px;
+    }
+    .sp_right{
+        margin-left: 0px;
+        flex-direction: column;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
+    /*appreciation*/
+    #appreciation{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 75px 0;
+    }
+    #comments_holder{
+        aspect-ratio: 2/3;
+        width: 90%;
+    }
+    .comment p{
+        font-size: 28px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
 }

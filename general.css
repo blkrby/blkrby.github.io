@@ -80,6 +80,9 @@ nav img{
 #mobile_nav{
     display: none;
 }
+#mobile_nav_menu{
+    display: none;
+}
 /*----------------------------------------------------------------------------------------------*/
 
 /*footer*/
@@ -199,6 +202,13 @@ footer hr{
 
 /*for phones*/
 @media(max-width:450px){
+    h3{
+        text-align: center;
+    }
+    h4{
+        text-align: center;
+    }
+
     /*nav*/
     nav{
         display: none;
@@ -212,15 +222,29 @@ footer hr{
         width: 97vw;
         height: 75px;
         padding: 10px 1.5vw;
+        z-index: 100;
+        transition: 0.5s;
+    }
+    .scrolled_mobile_nav{
         background-color: rgb(20, 20, 20);
         box-shadow: 0 0 10px black;
-        z-index: 100;
+    }
+    .unscrolled_mobile_nav{
+        background-color: rgba(0, 0, 0, 0);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0);
     }
     #mobile_nav a{
         height: 80%;
     }
+    .unscrolled_mobile_nav #mobile_nav_logo{
+        opacity: 0;
+    }
+    .scrolled_mobile_nav #mobile_nav_logo{
+        opacity: 1;
+    }
     #mobile_nav_logo{
         height: 100%;
+        transition: 0.5s;
     }
     #mobile_nav_btn{
         height: 55px;
@@ -285,5 +309,45 @@ footer hr{
         align-items: center;
         justify-content: center;
     }
+    .nav_page, .current_nav_page{
+        font-size: 21px;
+    }
     /*----------------------------------------------------------------------------------------------*/
+
+    /*trusted by*/
+    #trusted_by{
+        display: grid;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    #trusting_brands{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 33.33333%);
+        justify-content: center;
+        width: 100vw;
+        margin: 0;
+        padding: 0;
+    }
+    .trusting_brand_holder{
+        aspect-ratio: 1/1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+}
+
+/*for phones*/
+@media(max-width:380px){
+    /*footer*/
+    .nav_page, .current_nav_page{
+        font-size: 20px;
+        margin: 0 2px;
+        padding: 0 12.5px;
+    }
+    /*----------------------------------------------------------------------------------------------*/
+
 }
