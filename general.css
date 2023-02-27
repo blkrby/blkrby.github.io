@@ -110,10 +110,22 @@ footer hr{
     font-size: 20px;
     margin: 0;
 }
+#footer_bottom_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #footer_bottom_links a{
     font-size: 20px;
     color: white;
     text-decoration: none;
+}
+#footer_bottom_links hr{
+    height: 20px;
+    width: 2.5px;
+    border: 0;
+    background-color: white;
+    margin: 0 5px;
 }
 /*----------------------------------------------------------------------------------------------*/
 
@@ -312,6 +324,9 @@ footer hr{
     }
     .nav_page, .current_nav_page{
         font-size: 25px;
+    }
+    #footer_bottom_links{
+        margin-top: 15px;
     }
     /*----------------------------------------------------------------------------------------------*/
 

@@ -126,11 +126,7 @@
     text-align: justify;
     color: white;
 }
-.sp_left{
-    margin-right: 300px;
-}
 .sp_right{
-    margin-left: 300px;
     flex-direction: row-reverse;
 }
 /*----------------------------------------------------------------------------------------------*/
@@ -443,6 +439,12 @@
 
 /*for phones*/
 @media(max-width:450px){
+    #banner p{
+        font-size: 45px;
+        color: white;
+        max-width: 85%;
+    }
+    /*----------------------------------------------------------------------------------------------*/
     /*presentation*/
     #presentation{
         width: 100%;
